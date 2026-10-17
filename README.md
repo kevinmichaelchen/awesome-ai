@@ -6,33 +6,33 @@ _Last generated 2026-10-17. Star counts are a snapshot._
 
 ## Contents
 
-- [Agent frameworks & assistants](#agent-frameworks--assistants) (82)
+- [Agent frameworks & assistants](#agent-frameworks--assistants) (76)
   - [Agent frameworks & SDKs](#agent-frameworks--sdks) (17)
-  - [Personal & team assistant agents](#personal--team-assistant-agents) (39)
-  - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (12)
+  - [Personal & team assistant agents](#personal--team-assistant-agents) (36)
+  - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (10)
   - [Domain & research agents](#domain--research-agents) (6)
-  - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (8)
-- [Coding agents](#coding-agents) (114)
+  - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (7)
+- [Coding agents](#coding-agents) (115)
   - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (13)
-  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (21)
-  - [Parallel agent orchestration](#parallel-agent-orchestration) (14)
-  - [Remote & mobile agent clients](#remote--mobile-agent-clients) (10)
-  - [Autonomous loops & background agents](#autonomous-loops--background-agents) (15)
+  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (20)
+  - [Parallel agent orchestration](#parallel-agent-orchestration) (13)
+  - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
+  - [Autonomous loops & background agents](#autonomous-loops--background-agents) (16)
   - [Harness plugins, hooks & config](#harness-plugins-hooks--config) (21)
   - [Agent task tracking & planning](#agent-task-tracking--planning) (8)
-  - [Agent sessions, usage & observability](#agent-sessions-usage--observability) (12)
+  - [Agent sessions, usage & observability](#agent-sessions-usage--observability) (13)
 - [Agent skills](#agent-skills) (44)
-  - [Skill collections & packs](#skill-collections--packs) (12)
+  - [Skill collections & packs](#skill-collections--packs) (11)
   - [Visual & media output skills](#visual--media-output-skills) (14)
-  - [Behavior, writing & workflow skills](#behavior-writing--workflow-skills) (12)
+  - [Behavior, writing & workflow skills](#behavior-writing--workflow-skills) (13)
   - [Skill specs, registries & testing](#skill-specs-registries--testing) (6)
-- [Agent sandboxes & execution](#agent-sandboxes--execution) (30)
-  - [Agent VM & container sandboxes](#agent-vm--container-sandboxes) (19)
+- [Agent sandboxes & execution](#agent-sandboxes--execution) (26)
+  - [Agent VM & container sandboxes](#agent-vm--container-sandboxes) (16)
   - [Code interpreters & language sandboxes](#code-interpreters--language-sandboxes) (7)
-  - [Agent workspaces & virtual filesystems](#agent-workspaces--virtual-filesystems) (4)
-- [Agent memory, context & retrieval](#agent-memory-context--retrieval) (58)
-  - [Agent memory systems](#agent-memory-systems) (19)
-  - [Code intelligence for agents](#code-intelligence-for-agents) (11)
+  - [Agent workspaces & virtual filesystems](#agent-workspaces--virtual-filesystems) (3)
+- [Agent memory, context & retrieval](#agent-memory-context--retrieval) (55)
+  - [Agent memory systems](#agent-memory-systems) (17)
+  - [Code intelligence for agents](#code-intelligence-for-agents) (10)
   - [RAG, knowledge graphs & context layers](#rag-knowledge-graphs--context-layers) (14)
   - [Semantic & hybrid search](#semantic--hybrid-search) (6)
   - [Token & context-window optimization](#token--context-window-optimization) (8)
@@ -42,7 +42,7 @@ _Last generated 2026-10-17. Star counts are a snapshot._
   - [Browser & computer-use automation](#browser--computer-use-automation) (14)
   - [Web crawling & scraping](#web-crawling--scraping) (9)
   - [Document parsing, OCR & extraction](#document-parsing-ocr--extraction) (7)
-- [Models, inference & LLM access](#models-inference--llm-access) (93)
+- [Models, inference & LLM access](#models-inference--llm-access) (91)
   - [LLM inference engines & serving](#llm-inference-engines--serving) (16)
   - [Local model runners & desktop AI](#local-model-runners--desktop-ai) (8)
   - [ML frameworks, training & fine-tuning](#ml-frameworks-training--fine-tuning) (9)
@@ -50,7 +50,8 @@ _Last generated 2026-10-17. Star counts are a snapshot._
   - [Speech, voice & dictation](#speech-voice--dictation) (26)
   - [Vision, video & image models](#vision-video--image-models) (8)
   - [LLM gateways, routers & model catalogs](#llm-gateways-routers--model-catalogs) (15)
-  - [LLM app utilities & typed AI functions](#llm-app-utilities--typed-ai-functions) (6)
+  - [LLM app utilities & typed AI functions](#llm-app-utilities--typed-ai-functions) (4)
+- [Needs review](#needs-review) (14)
 
 ## Agent frameworks & assistants
 
@@ -106,15 +107,12 @@ Personal and team assistant agents, from always-on chat-app bots and self-hosted
 | [spacedriveapp/spacebot](https://github.com/spacedriveapp/spacebot) | 2.4k | 2026-02-11 | Multi-threaded agent harness built to serve teams, communities and companies on Discord, Slack, Telegram and Twitch, written in Rust. A hosted one-click option is available at spacebot.sh. |
 | [grp06/openclaw-studio](https://github.com/grp06/openclaw-studio) | 2k | 2026-01-28 | Web dashboard for OpenClaw: connect to a Gateway, view agents, chat, manage approvals and configure jobs from one interface. |
 | [langchain-ai/openwork](https://github.com/langchain-ai/openwork) | 1.5k | 2026-01-13 | Desktop interface for deepagentsjs agents, giving them filesystem and shell access, distributed on npm. |
-| [OpenBMB/EdgeClaw](https://github.com/OpenBMB/EdgeClaw) | 1.2k | 2026-02-13 | Edge-cloud collaborative personal assistant built on OpenClaw, adding Claude Code-style features. Aims to balance security, cost and efficiency between local and cloud models. |
 | [okou-ai/okou](https://github.com/okou-ai/okou) | 1.2k | 2025-11-14 | Slack-based AI teammate you assign to a role. It connects to the tools a team already uses and does work across marketing, sales, engineering and operations. |
 | [supermemoryai/company-brain](https://github.com/supermemoryai/company-brain) | 1k | 2026-09-25 | Slack teammate, previously a paid product and now open source, that remembers what a team says and can perform tasks. Self-hosted on Cloudflare. |
 | [pocketpaw/pocketpaw](https://github.com/pocketpaw/pocketpaw) | 891 | 2026-02-02 | Self-hosted personal AI agent with a native desktop app and web dashboard, reachable over Discord, Slack, WhatsApp and Telegram. Supports Anthropic, OpenAI or Ollama. Beta. |
 | [qhkm/zeptoclaw](https://github.com/qhkm/zeptoclaw) | 651 | 2026-02-12 | Single Rust binary for running personal AI agents locally, at the edge or on a VPS, with tools, memory, channels, providers and sandboxed autonomy built in. |
 | [dominant-strategies/entropic](https://github.com/dominant-strategies/entropic) | 296 | 2026-01-31 | Local-first Tauri desktop AI workspace that runs OpenClaw in a hardened local runtime. Source builds default to a local-only profile with hosted features disabled. |
-| [arsumbris/arsumbris](https://github.com/arsumbris/arsumbris) | 265 | 2026-09-13 | macOS-only agent-native IDE for typed knowledge, where types, skills, tools and UI components live together in composable repos that can depend on each other. Early alpha. |
 | [zscole/gru](https://github.com/zscole/gru) | 216 | 2026-01-16 | Self-hosted Python service that runs autonomous task agents controlled from Telegram, Discord or Slack. Agents learn user patterns and keep memory across tasks. |
-| [iii-experimental/agentos](https://github.com/iii-experimental/agentos) | 162 | 2026-03-01 | Agent OS made of 65 narrow Rust worker binaries, one per domain, that register Functions and Triggers on the iii engine, and which the project describes as self-evolving. |
 | [hunvreus/heypi](https://github.com/hunvreus/heypi) | 159 | 2026-05-11 | Connects one Pi agent to Slack, Discord, Telegram, local apps or webhooks as a team chat agent, adding routing, runtime isolation, approvals, memory, schedules and audit records. |
 | [Michaelliv/mercury](https://github.com/Michaelliv/mercury) (archived) | 143 | 2026-02-26 | Personal assistant for WhatsApp, Slack and Discord that runs pi as a sandboxed subprocess and deploys as a single Docker container. |
 | [yoheinakajima/babyagi3](https://github.com/yoheinakajima/babyagi3) | 130 | 2026-01-28 | Minimal personal agent configured once and driven by natural language to remember things, research, send emails, schedule tasks and learn new skills. Can get expensive with many automations. |
@@ -131,15 +129,13 @@ Platforms, protocols and simulations where many agents or agents and humans coll
 | Project | Stars | Created | Description |
 |---|--:|---|---|
 | [paperclipai/paperclip](https://github.com/paperclipai/paperclip) | 103.5k | 2026-03-02 | Node.js server and React dashboard for orchestrating a team of AI agents, with goals, tasks and cost tracking. Positioned as the company around agents like OpenClaw. |
-| [block/buzz](https://github.com/block/buzz) | 36.1k | 2026-03-06 | Self-hostable workspace on a relay you own where humans and AI agents share rooms in communities. Written in Rust under Apache 2.0. |
+| [block/buzz](https://github.com/block/buzz) | 36.1k | 2026-03-06 | Self-hostable workspace built on the Nostr protocol, where humans and AI agents share rooms. Has desktop and mobile apps and a CLI. Written in Rust under Apache 2.0. |
 | [camel-ai/oasis](https://github.com/camel-ai/oasis) | 5.3k | 2024-11-13 | Open social-media simulation framework from CAMEL-AI that can run up to one million LLM agents interacting with each other, for studying social behavior. |
 | [openagents-org/openagents](https://github.com/openagents-org/openagents) | 4.2k | 2025-03-10 | Open-source workspace where multiple AI agents connect and collaborate, with an agent launcher on npm and a Python package. No account required. |
 | [hyperspaceai/agi](https://github.com/hyperspaceai/agi) | 2.1k | 2026-03-08 | Experimental peer-to-peer network where autonomous agents run experiments, gossip findings to peers and push results to this repository, joinable from a browser or CLI. |
 | [klawsh/klaw.sh](https://github.com/klawsh/klaw.sh) | 634 | 2026-02-15 | Go CLI that works like kubectl for AI agents: deploy, monitor, isolate and scale fleets of business agents from one binary, with Slack control. |
 | [rllm-org/hive](https://github.com/rllm-org/hive) | 217 | 2026-03-14 | Open-source platform where agents collaborate on a shared artifact: each task is a repo plus eval script, agents work in isolated forks, runs are tracked by git SHA, and results go on a leaderboard. |
-| [pass-agent/loomkin](https://github.com/pass-agent/loomkin) | 181 | 2026-02-28 | Elixir/OTP platform where AI agents form teams, spawn specialists, share discoveries, review each other's work and vote, with persistent memory and a live mission-control UI. |
 | [Intelligent-Internet/CommonGround](https://github.com/Intelligent-Internet/CommonGround) | 153 | 2026-02-16 | Python and PostgreSQL kernel that provides a durable shared work layer for human-agent and multi-agent collaboration, exposed over an HTTP API. |
-| [Weber-GeoML/Choir](https://github.com/Weber-GeoML/Choir) | 116 | 2026-09-21 | Open protocol for distributed multi-agent autoformalization: an orchestrator turns a large Lean or Isabelle formalization plan into GitHub tasks that contributors claim and work with their own agents. |
 | [warpdotdev/oz-workspace](https://github.com/warpdotdev/oz-workspace) | 72 | 2026-02-13 | Sample app for Warp's Oz API: chat rooms where assigned agents collaborate in real time over SSE, @mention each other, create Kanban tasks and produce artifacts such as PRs. |
 | [zscole/matrix-agents](https://github.com/zscole/matrix-agents) | 19 | 2026-02-05 | Shell-based coordination of AI agents running on different machines through your own Matrix server, avoiding cloud services and third-party platforms. |
 
@@ -165,11 +161,10 @@ Benchmarks, trajectory analysis, user simulators and training or evolution frame
 | [microsoft/agent-lightning](https://github.com/microsoft/agent-lightning) | 18.7k | 2025-06-18 | Lightweight reinforcement learning framework of about 3,500 lines for training agents with their real harnesses. Refactored in v1.0. |
 | [HKUDS/ClawWork](https://github.com/HKUDS/ClawWork) | 8.6k | 2026-02-15 | Benchmark and leaderboard where OpenClaw-style agents act as coworkers across 44+ professions, ranked by income, cost and quality on real-life tasks. |
 | [aiming-lab/SkillRL](https://github.com/aiming-lab/SkillRL) | 1k | 2026-02-08 | NeurIPS 2026 research code for training agents with recursive skill-augmented reinforcement learning, discovering skills automatically from experience. Includes SFT data generation. |
-| [imbue-ai/darwinian_evolver](https://github.com/imbue-ai/darwinian_evolver) | 533 | 2026-02-02 | Lightweight framework that evolves code and prompts: it keeps a population of solutions, selects parents, mutates them with LLMs and scores the offspring each iteration. |
+| [imbue-ai/darwinian_evolver](https://github.com/imbue-ai/darwinian_evolver) | 533 | 2026-02-02 | Framework that evolves code and prompts with LLMs: keeps a population of solutions, selects parents, mutates them and scores offspring. Its main example evolves ARC-AGI solvers. |
 | [arklexai/arksim](https://github.com/arklexai/arksim) | 233 | 2026-02-27 | Simulates multi-turn user conversations with an AI agent to surface failures such as misread intent that only appear mid-conversation, before the agent reaches production. |
 | [MaxBittker/runebench](https://github.com/MaxBittker/runebench) | 132 | 2026-02-26 | Benchmark suite that scores AI coding agents on long-horizon RuneScape tasks. Agents write TypeScript against an 8x-speed emulated game server via rs-sdk. |
 | [AR-FORUM/hodoscope](https://github.com/AR-FORUM/hodoscope) | 121 | 2026-02-19 | Python tool for unsupervised, human-in-the-loop analysis of agent trajectories: summarizes, embeds and visualizes actions to find patterns across models. Reads common eval formats via LiteLLM. |
-| [zou-group/humanlm](https://github.com/zou-group/humanlm) | 93 | 2026-02-11 | Stanford research code for training language models to simulate specific users by aligning to their latent states rather than imitating their responses. |
 
 ## Coding agents
 
@@ -184,14 +179,14 @@ Terminal coding agents and harness cores that read and edit code and run command
 | [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) | 68.6k | 2023-07-14 | Rust coding agent tuned for low-cost open models such as Kimi and GLM, with a Codex-like interface and provider-recommended harness reimplementations. |
 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 22.1k | 2026-05-08 | Open-source Rust coding and research agent for long-running work, built around a Recursive Language Model (RLM) approach to context and designed to improve itself. |
 | [just-every/code](https://github.com/just-every/code) | 4k | 2025-08-10 | Community fork of the Codex CLI that adds browser integration, multi-agent orchestration across OpenAI, Claude and Gemini, theming and reasoning controls while staying compatible with upstream. |
-| [batrachianai/toad](https://github.com/batrachianai/toad) | 3.5k | 2025-07-17 | Python terminal interface that wraps coding agents such as Claude, Gemini, Codex and OpenHands behind one unified UI. |
+| [batrachianai/toad](https://github.com/batrachianai/toad) | 3.5k | 2025-07-17 | Python terminal UI called Toad that acts as a unified front end for coding agents implementing the Agent Client Protocol, such as Claude, Gemini, Codex and OpenHands. |
 | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | 3.2k | 2026-02-11 | Agent harness that combines mechanical detection of dead code, duplication and complexity with subjective LLM review to guide a coding agent in systematically improving codebase quality. |
 | [Dicklesworthstone/pi_agent_rust](https://github.com/Dicklesworthstone/pi_agent_rust) | 1.9k | 2026-02-02 | Rust terminal coding agent CLI with no unsafe code, positioned as a fast-starting alternative to managed-runtime agents. |
 | [Twigpine/zero](https://github.com/Twigpine/zero) | 1.7k | 2026-05-28 | Go terminal coding agent that inspects repositories, edits files, runs commands and keeps durable local sessions, with a user-chosen model and permission level. |
 | [tontinton/maki](https://github.com/tontinton/maki) | 1.2k | 2026-02-13 | Rust coding agent designed to use few context tokens, extendable with Neovim-style Lua plugins. |
-| [EuniAI/Prometheus](https://github.com/EuniAI/Prometheus) | 1.1k | 2024-10-14 | Python agent platform that builds a knowledge graph of a codebase and uses it to reason about, understand and repair issues through autonomous code agents. |
+| [EuniAI/Prometheus](https://github.com/EuniAI/Prometheus) | 1.1k | 2024-10-14 | Python FastAPI backend that builds a knowledge graph of a codebase and uses agents to answer questions, resolve GitHub issues and review pull requests through REST endpoints and a CLI. |
 | [walter-grace/mac-code](https://github.com/walter-grace/mac-code) | 1k | 2026-03-23 | Claude-Code-style terminal agent that runs large local models on Apple Silicon Macs by paging weights from flash, targeting models that do not fit in RAM. |
-| [Effectful-Tech/clanka](https://github.com/Effectful-Tech/clanka) | 112 | 2026-03-07 | TypeScript CLI coding agent from Effectful that defaults to Codex subscription auth for OpenAI and supports API keys and custom endpoints. |
+| [Effectful-Tech/clanka](https://github.com/Effectful-Tech/clanka) | 112 | 2026-03-07 | TypeScript coding agent from Effectful, run as a CLI or as an Agent Client Protocol server over stdio for editors. Defaults to Codex subscription auth; supports API keys and custom endpoints. |
 
 ### Agent IDEs & desktop workbenches (ADEs)
 
@@ -202,24 +197,23 @@ Desktop, native and web workbenches where a human drives one or many coding agen
 | [stablyai/orca](https://github.com/stablyai/orca) | 95k | 2026-03-17 | Agentic development environment for running Codex, Claude Code, OpenCode or Pi side-by-side, each in its own worktree, with desktop, mobile companion and remote runtime. |
 | [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 28.2k | 2026-01-28 | Ghostty-based macOS terminal with vertical tabs and notifications designed for running multiple AI coding agents. |
 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 28.1k | 2026-02-08 | Agent harness control surface for controlling coding agents on your machine from Electron desktop, web and iOS/Android mobile apps. |
-| [slopus/happy](https://github.com/slopus/happy) | 24.2k | 2025-07-18 | Open-source app for orchestrating Claude, Codex and Grok in one place, reusing existing vendor subscriptions and each vendor's own prompts and tools. |
 | [getpaseo/paseo](https://github.com/getpaseo/paseo) | 21.2k | 2025-10-13 | Open-source agentic development environment for desktop, mobile, web and CLI that manages Claude Code, Codex, Copilot, OpenCode and other agents alongside editor, terminals, diffs and a browser. |
 | [superset-sh/superset](https://github.com/superset-sh/superset) | 15.3k | 2025-10-21 | Agentic IDE for running many CLI coding agents such as Claude Code and Codex in parallel with terminals, code review and browser previews, using the user's own subscriptions. |
-| [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | 13.3k | 2026-02-13 | Go tool for planning, running and supervising teams of coding agents from planning to merge, supporting Claude Code, Codex and many other harnesses across desktop, web, mobile and cloud. |
+| [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | 13.3k | 2026-02-13 | Electron desktop app, with optional CLI and mobile app, that supervises coding agents in isolated workspaces and tracks their pull requests, CI, reviews and merge conflicts. Supports many harnesses. |
 | [openchamber/openchamber](https://github.com/openchamber/openchamber) | 11.7k | 2025-09-11 | Open-source workspace built on the OpenCode agent for running and reviewing agent work, usable from desktop and remotely. |
 | [generalaction/emdash](https://github.com/generalaction/emdash) | 6k | 2025-08-28 | Open-source agentic development environment for running multiple coding agents in parallel with any provider. |
 | [get-bb/bb](https://github.com/get-bb/bb) | 4.4k | 2026-02-24 | Agentic IDE that can control, customize and automate itself, driven through a desktop app, web app, CLI or HTTP API, with work organized into followable threads. |
 | [Dimillian/CodexMonitor](https://github.com/Dimillian/CodexMonitor) | 4.3k | 2026-01-11 | Tauri app for orchestrating multiple Codex agents across local workspaces, with a project sidebar and conversation view backed by the Codex app-server protocol. |
 | [zeronsh/zeron](https://github.com/zeronsh/zeron) | 3.3k | 2026-07-20 | Native control plane for running Claude Code, Codex, Cursor, Devin and other coding agents from a desktop app, local by default with optional multi-device sync. |
 | [hardbeat920/monocode](https://github.com/hardbeat920/monocode) | 3.1k | 2026-08-20 | GUI for coding agents that runs any installed and logged-in CLI such as Claude Code, Codex, Cursor, OpenCode or Devin, with tabs as sessions and a composer as the input. |
-| [collabs-inc/collab-public](https://github.com/collabs-inc/collab-public) | 3.1k | 2026-03-15 | Early-stage desktop environment that places agent terminals, context files and running code on an infinite canvas. |
+| [collabs-inc/collab-public](https://github.com/collabs-inc/collab-public) | 3.1k | 2026-03-15 | Early-stage Electron desktop app (macOS, Windows, Linux) that places agent terminals, editors, markdown and running code on an infinite canvas. |
 | [coder/xum](https://github.com/coder/xum) | 2.1k | 2025-09-17 | Desktop app (renamed from Mux) for isolated, parallel agentic development, acting as a coding agent multiplexer. |
 | [penso/herdr-gpui](https://github.com/penso/herdr-gpui) | 1.5k | 2026-09-20 | Native Rust/GPUI client for macOS, Linux and Windows that connects to a local Herdr daemon to show terminal sessions, workspaces, Git worktrees and agent activity. |
 | [penso/arbor](https://github.com/penso/arbor) | 836 | 2026-03-04 | Native Rust desktop app built on GPUI for agentic coding, combining Git worktrees, terminals and diffs in one window. |
 | [missuo/herdrm](https://github.com/missuo/herdrm) | 762 | 2026-08-19 | Native macOS console for herdr that shows Claude Code, Codex, Gemini, Grok and OpenCode sessions across the Mac and SSH hosts, with full-fidelity TUI access to each. |
 | [owengretzinger/constellagent](https://github.com/owengretzinger/constellagent) | 217 | 2026-02-10 | macOS desktop app for running multiple AI agents in parallel, each with its own terminal, Monaco editor and isolated git worktree in a single window. |
 | [scarce/axel](https://github.com/scarce/axel) | 208 | 2026-01-29 | Native macOS app, paired with a Rust CLI, that presents a task list while orchestrating many AI agents across tmux panes, Ghostty-based terminals and git worktrees. |
-| [longsurf-ai/endo](https://github.com/longsurf-ai/endo) | 93 | 2026-10-14 | Desktop chat app described as a Higher Order Harness that composes agents running on existing subscriptions into workflows under a single unified interface. |
+| [longsurf-ai/endo](https://github.com/longsurf-ai/endo) | 93 | 2026-10-14 | Desktop chat app described as a Higher Order Harness: it composes Codex, Claude Code and other agents on existing subscriptions into workflows behind one interface. |
 
 ### Parallel agent orchestration
 
@@ -234,9 +228,8 @@ CLI, TUI and tmux layers that spawn, multiplex and coordinate several coding age
 | [standardagents/dmux](https://github.com/standardagents/dmux) | 1.8k | 2025-08-20 | Multiplexer that runs multiple AI coding agents in tmux panes, each in its own isolated git worktree, for parallel branching and merging. |
 | [nrslib/takt](https://github.com/nrslib/takt) | 1.4k | 2026-01-25 | CLI that defines multi-agent coding workflows in YAML (planning, implementation, review, fix loops, human checkpoints), running them in isolated worktrees with traceable logs. |
 | [Ataraxy-Labs/opensessions](https://github.com/Ataraxy-Labs/opensessions) | 1.2k | 2026-03-19 | Rust tmux sidebar that tracks Amp, Claude Code, Codex and OpenCode sessions with per-thread markers, live state and a local HTTP API. |
-| [AgentWorkforce/relay](https://github.com/AgentWorkforce/relay) | 885 | 2025-12-17 | TypeScript infrastructure for coding agents aimed at teams, so agents belonging to different teammates can communicate and share work instead of relying on copy-pasting. |
+| [AgentWorkforce/relay](https://github.com/AgentWorkforce/relay) | 885 | 2025-12-17 | Real-time messaging layer for coding agents such as Claude, Codex and Gemini. A Rust broker wraps each agent CLI in a PTY and injects messages, so agents on different machines or teammates can talk. |
 | [joelhooks/swarm-tools](https://github.com/joelhooks/swarm-tools) | 747 | 2025-12-08 | OpenCode plugin for multi-agent swarm coordination that decomposes tasks, runs agents in parallel, tracks agent issues and learns from past outcomes so work survives context loss. |
-| [poteto/noodle](https://github.com/poteto/noodle) | 497 | 2026-02-22 | Go tool for orchestrating coding agents through skills. |
 | [Dicklesworthstone/ntm](https://github.com/Dicklesworthstone/ntm) | 459 | 2025-12-10 | Named Tmux Manager: a Go binary that turns tmux into a control plane for multiple coding agents, with a TUI command palette, safety policies, Agent Mail coordination and a local REST/WebSocket API. |
 | [kingbootoshi/codex-orchestrator](https://github.com/kingbootoshi/codex-orchestrator) | 355 | 2026-01-17 | Claude Code plugin and CLI that spawns OpenAI Codex agents in tmux sessions, monitors their progress, sends mid-task follow-ups and captures results. |
 | [regenrek/peky](https://github.com/regenrek/peky) | 150 | 2025-11-23 | Go TUI that puts Claude Code, Codex CLI, pi, opencode and other terminal agents into a single app so parallel agents across projects stay organized. |
@@ -248,6 +241,7 @@ Clients for controlling coding agents from a phone, browser or chat app such as 
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
+| [slopus/happy](https://github.com/slopus/happy) | 24.2k | 2025-07-18 | Open-source mobile, web and desktop client for controlling Claude Code, Codex and other coding agents remotely, with end-to-end encryption. |
 | [0xSero/litter](https://github.com/0xSero/litter) | 2.5k | 2026-02-21 | Native iOS and Android client for Codex and Local Studio that connects to local or remote servers to manage sessions and run agentic coding workflows from a phone. |
 | [remorses/kimaki](https://github.com/remorses/kimaki) | 1.4k | 2025-09-02 | Collaborative agent orchestrator that exposes OpenCode through Discord, mapping each channel to a project and each thread to a coding session. |
 | [AltanS/collie](https://github.com/AltanS/collie) | 1.4k | 2026-06-28 | Self-hosted PWA that serves as a mobile client for Herdr, with experimental tmux and zellij support, for driving Claude Code, Pi, Codex and OpenCode from a phone with push alerts. |
@@ -275,6 +269,7 @@ Systems that run coding agents unattended, including Ralph loops, issue-to-PR pi
 | [iannuttall/ralph](https://github.com/iannuttall/ralph) (archived) | 951 | 2026-01-12 | Minimal file-based autonomous coding loop that starts each iteration fresh, using a JSON PRD plus git as memory and committing one story at a time. |
 | [miantiao-me/cloud-code](https://github.com/miantiao-me/cloud-code) | 561 | 2026-01-25 | TypeScript project that runs OpenCode inside Cloudflare Workers and Containers to provide a dedicated cloud-hosted coding agent. |
 | [snarktank/compound-product](https://github.com/snarktank/compound-product) | 543 | 2026-01-22 | Shell-based system that reads a product's daily performance reports, picks the top actionable priority, plans it, and implements the fix autonomously with an AI agent. |
+| [poteto/noodle](https://github.com/poteto/noodle) | 497 | 2026-02-22 | Go framework where agents read and write files in a continuous loop over a project backlog, working in isolated git worktrees and merging results, configured through skills. |
 | [terragon-labs/terragon-oss](https://github.com/terragon-labs/terragon-oss) | 261 | 2026-01-16 | Open-source snapshot of Terragon, a shut-down service that delegated work to Claude Code, Codex and other coding CLIs running as background agents in the cloud; provided as-is. |
 | [rohunj/claude-build-workflow](https://github.com/rohunj/claude-build-workflow) | 231 | 2026-01-18 | Shell workflow for Claude Code that interviews the user (BMAD method), writes a PRD with user stories, designs the build, and then builds the app autonomously. |
 | [tim-smart/lalph](https://github.com/tim-smart/lalph) | 134 | 2026-01-12 | TypeScript orchestrator that pulls work from an issue source such as GitHub Issues or Linear, runs a chosen CLI agent per project with configurable concurrency and review agent, and syncs task state. |
@@ -302,9 +297,9 @@ Plugins, hooks, statuslines, notifications, personas and config tools that exten
 | [jarrodwatts/claude-stt](https://github.com/jarrodwatts/claude-stt) (archived) | 364 | 2026-01-13 | Archived Claude Code plugin for local speech-to-text dictation with a hold-to-talk hotkey; superseded by Claude Code's native /voice command. |
 | [kommander/oc-plugin-vault-tec](https://github.com/kommander/oc-plugin-vault-tec) | 182 | 2026-03-28 | OpenCode plugin that gives the coding agent a Vault-Tec Overseer persona in the style of a RobCo terminal, themed around the Fallout vault experiments. |
 | [ctoth/claudio](https://github.com/ctoth/claudio) | 117 | 2025-07-28 | Go hook-driven audio layer that maps events from Claude Code, Codex, Gemini CLI, Qwen Code, Copilot CLI and OpenCode to contextual sounds without blocking the agent. |
-| [seth-schultz/orchestr8](https://github.com/seth-schultz/orchestr8) | 69 | 2025-10-31 | Claude Code extension that packages agents and workflows to make Claude act as a full software engineering team. |
 | [NathanFlurry/herdr-plugin-jj-workspace](https://github.com/NathanFlurry/herdr-plugin-jj-workspace) | 48 | 2026-06-23 | Herdr plugin, written in Rust, that creates and removes Jujutsu (jj) workspaces as Herdr workspaces, opening tabs with Codex alongside a terminal. |
 | [joelreymont/banjo](https://github.com/joelreymont/banjo) | 43 | 2025-12-24 | Zig implementation of an ACP adapter that runs Claude Code and Codex inside editors such as Zed. |
+| [madarco/agentbox-herdr-plugin](https://github.com/madarco/agentbox-herdr-plugin) | 34 | 2026-06-24 | herdr plugin for AgentBox adding a live overlay of your AgentBox sandbox VMs and shortcuts to start a box in the current project. |
 | [MatiousCorp/claude-tts](https://github.com/MatiousCorp/claude-tts) | 30 | 2026-03-03 | Claude Code plugin that speaks responses aloud through ElevenLabs, OpenAI, Google, Amazon Polly, Azure, Kitten or local system TTS on macOS, Linux and Windows. |
 | [alp82/claude-statusline](https://github.com/alp82/claude-statusline) | 26 | 2026-07-21 | Single bash script for the Claude Code statusline showing directory, branch, model, context window, and 5-hour and 7-day rate-limit bars that compare usage against elapsed time. |
 | [kevinmichaelchen/perplexity-opencode](https://github.com/kevinmichaelchen/perplexity-opencode) (archived) | 7 | 2026-01-15 | OpenCode plugin that detects web-search or research requests in a message and nudges the agent to use the Perplexity MCP server. |
@@ -337,11 +332,12 @@ Tools that capture, replay, search or measure coding-agent sessions, covering to
 | [specstoryai/getspecstory](https://github.com/specstoryai/getspecstory) | 1.4k | 2024-12-13 | Local-first extensions for AI IDEs and terminal agents that capture and index conversation history, with options to sync to the cloud and turn histories into reusable skills. |
 | [waynesutton/opensync](https://github.com/waynesutton/opensync) | 410 | 2026-01-17 | Cloud-synced dashboards for OpenCode, Claude Code, Codex, Cursor and Factory Droid that track session activity, tool usage and token spend, with semantic search and eval dataset export. |
 | [Piebald-AI/splitrail](https://github.com/Piebald-AI/splitrail) | 224 | 2025-07-12 | Rust token-usage and cost monitor that reads local session data for Claude Code, Codex, Gemini, Qwen Code, Cline, Copilot, OpenCode and other agents, with real-time tracking. |
+| [Necmttn/ax](https://github.com/Necmttn/ax) | 117 | 2026-05-08 | Local-first Agent Experience layer: the axctl CLI ingests Claude Code and Codex sessions into a SurrealDB graph so agents and users can analyze mistakes and feed lessons back into later runs. |
 | [robertoshimizu/session-graph](https://github.com/robertoshimizu/session-graph) | 114 | 2026-02-20 | Python pipeline that turns AI coding sessions from Claude Code, ChatGPT, DeepSeek, Grok and Warp into an RDF knowledge graph with a W3C ontology, Wikidata entity linking and SPARQL queries. |
 | [ssreeni1/tracebase](https://github.com/ssreeni1/tracebase) | 79 | 2026-05-26 | Imports local Codex and Claude session transcripts, encrypts raw events at rest, and serves a searchable localhost dashboard plus MCP access for inspecting what an agent did. |
 | [dadlerj/tin](https://github.com/dadlerj/tin) | 64 | 2025-12-30 | Version-control layer that treats AI coding conversations as first-class artifacts, permanently linked to the code they produced, in the manner of git. |
 | [saint0x/tl](https://github.com/saint0x/tl) | 17 | 2026-01-02 | Rust version-control layer built on Jujutsu that records a checkpoint on every file change so any working state from an AI-assisted session can be restored. |
-| [captainsafia/stitch](https://github.com/captainsafia/stitch) | 11 | 2025-12-28 | Tool for recording the intent behind code changes ("stitches") and binding it to git commits and diffs, forming an intent DAG that linear history cannot express. |
+| [captainsafia/stitch](https://github.com/captainsafia/stitch) | 11 | 2025-12-28 | Tool for recording the intent behind code changes (""stitches"") and binding it to git commits and diffs, forming an intent DAG that linear history cannot express. |
 
 ## Agent skills
 
@@ -358,7 +354,6 @@ Bundles of agent skills and plugins grouped around a theme or vendor, such as sc
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 8k | 2026-07-10 | Collection of agent skills for building interfaces, covering UI, typography, color, accessibility, layout and product writing, based on the author's design engineering writing. |
 | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | 3.6k | 2026-01-19 | Collection of Three.js skill files that give Claude Code API details, best practices and patterns for creating 3D elements and interactive experiences. |
 | [jtydhr88/screenwriting-skills](https://github.com/jtydhr88/screenwriting-skills) | 1.7k | 2026-09-06 | 26 agent skills for Claude Code and Codex covering screenwriting, television writing and dramaturgy, distilled from 47 craft books and 23 volumes of published scripts. |
-| [rjs/shaping-skills](https://github.com/rjs/shaping-skills) (archived) | 1.4k | 2026-01-29 | Claude Code skills for Shape Up shaping and breadboarding adapted to work with an LLM. The author marks them obsolete since Opus 4.6. |
 | [marckohlbrugge/37signals-skills](https://github.com/marckohlbrugge/37signals-skills) | 726 | 2025-12-17 | Unofficial agent skills and reference guide that teach coding assistants to write Rails the 37signals way, extracted from Fizzy, Campfire and over 100 of DHH's code reviews. |
 | [kitlangton/skills](https://github.com/kitlangton/skills) | 350 | 2026-07-15 | Kit Langton's personal agent skills, mainly a guide to production TypeScript with Effect v4. |
 | [perplexityai/api-platform-developers](https://github.com/perplexityai/api-platform-developers) | 81 | 2026-07-15 | Official Perplexity API Platform skills published as portable Agent Skills for Claude Code, Codex CLI and other clients. The repository doubles as a Claude Code plugin marketplace. |
@@ -395,6 +390,7 @@ Skills that shape agent behavior, writing style or working process, such as plan
 | [blader/humanizer](https://github.com/blader/humanizer) | 57.8k | 2026-01-18 | Agent skill that rewrites text to remove signs of AI-generated writing, based on Wikipedia's Signs of AI writing guide, without changing the meaning. |
 | [ayghri/i-have-adhd](https://github.com/ayghri/i-have-adhd) | 57.5k | 2026-05-13 | Skill that stops coding agents from burying the answer: output is action-first with numbered steps and no filler pleasantries. Install instructions are provided for several agent CLIs. |
 | [OthmanAdi/planning-with-files](https://github.com/OthmanAdi/planning-with-files) | 27.5k | 2026-01-03 | Skill and hooks that keep a Manus-style Markdown plan on disk, re-injected each turn and recoverable after /clear or compaction, with a completion gate. Works across Claude Code, Codex, Cursor and others. |
+| [rjs/shaping-skills](https://github.com/rjs/shaping-skills) (archived) | 1.4k | 2026-01-29 | Claude Code skills for Shape Up shaping and breadboarding adapted to work with an LLM. The author marks them obsolete since Opus 4.6. |
 | [ast-grep/agent-skill](https://github.com/ast-grep/agent-skill) | 892 | 2025-11-16 | Claude Code plugin marketplace shipping an ast-grep skill that teaches agents to search code structurally using AST patterns rather than text matching. |
 | [dmmulroy/cloudflare-skill](https://github.com/dmmulroy/cloudflare-skill) | 726 | 2026-01-12 | OpenCode skill bundling Cloudflare platform reference docs for LLM consumption, covering Workers, Pages, KV, D1, R2, Workers AI, Vectorize, networking, security and infrastructure-as-code. |
 | [docwriter-org/plain-writing-skill](https://github.com/docwriter-org/plain-writing-skill) | 710 | 2026-06-15 | Agent skill with plain-text rules that make an AI agent write in a plain style and check its own output, plus evals and a revision view that shows what changed. |
@@ -439,11 +435,8 @@ MicroVM, VM and container sandboxes for running agents or untrusted agent code, 
 | [huggingface/hf-sandbox](https://github.com/huggingface/hf-sandbox) (archived) | 159 | 2026-04-27 | Modal-style sandbox API running code on Hugging Face Jobs; the prototype is being upstreamed as a Sandbox API and hf sandbox CLI in huggingface_hub 1.22.0. |
 | [computesdk/benchmarks](https://github.com/computesdk/benchmarks) | 130 | 2026-02-18 | Reproducible, provider-neutral benchmarks of sandboxes, object storage, headless browsers and AI gateways, the infrastructure agents run on. All tests are automated. |
 | [jasonkneen/Agent-Farm-CLI](https://github.com/jasonkneen/Agent-Farm-CLI) | 68 | 2026-07-08 | CLI (farm) that runs N isolated AI accounts on one Mac, each in its own Apple container VM with separate provider state for claude, codex, grok and gemini, avoiding shared Keychain collisions. |
-| [noperator/membrane](https://github.com/noperator/membrane) | 66 | 2025-10-27 | Lightweight cross-platform sandbox for AI agents that is agent-agnostic and gives real-time visibility into everything the agent does, favouring a small, understandable design. |
-| [madarco/agentbox-herdr-plugin](https://github.com/madarco/agentbox-herdr-plugin) | 34 | 2026-06-24 | herdr plugin for AgentBox adding a live overlay of your AgentBox sandbox VMs and shortcuts to start a box in the current project. |
-| [aezell/sprite-galaxy](https://github.com/aezell/sprite-galaxy) | 23 | 2026-01-10 | Go terminal UI that shows a Fly.io Sprites network as animated nodes in a galaxy view, with real-time running and stopped status for managing sprites. |
-| [jbellerb/sprite-hacks](https://github.com/jbellerb/sprite-hacks) | 13 | 2026-02-05 | Scripts and demos from experimenting with Fly Sprites, including a reverse sshfs mount of a local directory and a jj sprite-workspace alias. |
-| [janwilmake/sandbox](https://github.com/janwilmake/sandbox) | 5 | 2026-03-24 | Experiment exposing a Cloudflare sandbox terminal as an agent tool, with the user logged into their own stripe, git, gh and wrangler and the sandbox sleeping when idle. |
+| [noperator/membrane](https://github.com/noperator/membrane) | 66 | 2025-10-27 | Lightweight cross-platform CLI sandbox that wraps any agent process with network egress filtering and filesystem isolation, plus real-time observability via eBPF tracing. |
+| [aezell/sprite-galaxy](https://github.com/aezell/sprite-galaxy) | 23 | 2026-01-10 | Go terminal UI that shows a Fly.io Sprites network as animated nodes, with status, public/private toggles, connections and a network policy editor. |
 
 ### Code interpreters & language sandboxes
 
@@ -467,7 +460,6 @@ Copy-on-write workspaces and virtual filesystems that give agents cheap, isolate
 |---|--:|---|---|
 | [anomalyco/rift](https://github.com/anomalyco/rift) | 1.3k | 2026-05-31 | Rust tool that creates instant copy-on-write workspace snapshots of a project, for coding agents and parallel work. Marked early software. |
 | [cloudflare/artifact-fs](https://github.com/cloudflare/artifact-fs) | 1.2k | 2026-03-29 | Go FUSE driver that mounts large git repos as working trees right away and hydrates file contents on demand, aimed at agents and sandboxes where startup time matters. Beta. |
-| [antfu/ghfs](https://github.com/antfu/ghfs) | 276 | 2026-03-04 | Syncs open GitHub issues and pull requests into a local .ghfs directory for offline viewing and batch operations by humans and agents. README says work in progress. |
 | [0xff-ai/omnifs](https://github.com/0xff-ai/omnifs) | 87 | 2026-04-12 | FUSE filesystem that projects external systems such as GitHub, DNS, arXiv, Linear, Kubernetes and SQLite as directories and files that agents can read with ls, cat and grep. |
 
 ## Agent memory, context & retrieval
@@ -486,7 +478,6 @@ Persistent memory layers that carry facts and experience across agent sessions, 
 | [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | 14.6k | 2025-07-29 | Agent-driven personal memory system that stores memory as a wiki shared across sessions, agents and devices. |
 | [MemTensor/MemOS](https://github.com/MemTensor/MemOS) | 11.9k | 2025-07-06 | Memory operating system for LLM agents offering persistent memory, hybrid retrieval and cross-task skill reuse, with a DeepSeek Harness integration and a local memory viewer. |
 | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 3.8k | 2026-01-01 | ICML 2026 lifelong memory system for LLM agents that stores, compresses and retrieves text and multimodal memories, usable through MCP or Python. |
-| [agenticnotetaking/arscontexta](https://github.com/agenticnotetaking/arscontexta) | 3.5k | 2026-02-15 | Claude Code plugin that interviews you about how you work and generates a personalised Markdown knowledge system, including folder structure, context files, hooks, navigation maps and note templates. |
 | [letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious) | 2.9k | 2026-01-14 | Demo built on the Letta Code SDK where a background Letta agent watches Claude Code sessions, builds memory and feeds guidance back. Not meant for production; Letta Code is the supported route. |
 | [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | 2.8k | 2026-02-09 | Cross-agent semantic memory layer for Claude Code, Codex and others, storing memories as Markdown indexed in Milvus, with optional remote reranking. |
 | [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | 1.8k | 2026-05-12 | Memory layer that captures session history across Claude Code, Cursor, Codex, OpenCode and 20+ other harnesses and distills workflows, corrections and debugging patterns into reusable knowledge. |
@@ -494,7 +485,6 @@ Persistent memory layers that carry facts and experience across agent sessions, 
 | [Dicklesworthstone/cass_memory_system](https://github.com/Dicklesworthstone/cass_memory_system) | 448 | 2025-12-07 | Procedural memory for coding agents that turns scattered session history into persistent cross-agent memory, with a JSON mode for agent use. |
 | [jumbocontext/cli](https://github.com/jumbocontext/cli) | 278 | 2025-12-05 | CLI that stores project details once and gives Claude, Codex, Copilot and other coding agents persistent memory, session continuity and goal tracking. |
 | [glommer/memelord](https://github.com/glommer/memelord) | 197 | 2026-02-17 | In-process per-project persistent memory for coding agents, built on Turso and refined with reinforcement signals, so agents keep project patterns and user corrections across sessions. |
-| [Necmttn/ax](https://github.com/Necmttn/ax) | 117 | 2026-05-08 | Local-first tool that observes Claude Code and Codex sessions and turns repeated mistakes and discoveries into lessons injected into later runs, a retro loop for coding agents. |
 | [nikita-rulenko/Helixir](https://github.com/nikita-rulenko/Helixir) | 88 | 2025-11-29 | Rust memory control plane that keeps one governed reasoning graph shared across Codex, Claude Code, Cursor and other MCP clients, with full-host and remote-agent deployment modes. |
 | [thezpack/personal-context-layer](https://github.com/thezpack/personal-context-layer) | 1 | 2026-07-08 | Local-first MCP server that keeps a live model of your schedule, sleep and cognitive load and hands it to connected AI sessions so they can adapt length and tone. |
 
@@ -514,7 +504,6 @@ Indexes, graphs and fetchers that give coding agents structured knowledge of a c
 | [glommer/codemogger](https://github.com/glommer/codemogger) | 347 | 2026-02-24 | Code indexing library and MCP server that chunks source by tree-sitter units, embeds them locally and stores vector and full-text indexes in one SQLite file per codebase, with no server or API keys. |
 | [iannuttall/librarian](https://github.com/iannuttall/librarian) | 100 | 2026-01-04 | Local CLI that fetches and indexes developer documentation from GitHub repos and public websites so coding agents can search current docs instead of guessing. Needs Bun at runtime. |
 | [joelhooks/pi-ast-grep](https://github.com/joelhooks/pi-ast-grep) | 27 | 2026-06-23 | Package for the pi coding agent that exposes ast-grep outline and structural search as agent tools, pinning a specific ast-grep CLI version. |
-| [siliconjungle/-shapeshift-labs-loom](https://github.com/siliconjungle/-shapeshift-labs-loom) | 13 | 2026-06-10 | Project-level CLI that creates a .loom workspace, scans source into a content-addressed semantic graph and coordinates agent swarms, with Frontier language tooling. |
 
 ### RAG, knowledge graphs & context layers
 
@@ -665,7 +654,7 @@ Engines and serving layers for running LLMs fast, from datacenter GPU servers to
 | [mlc-ai/web-llm](https://github.com/mlc-ai/web-llm) | 19.3k | 2023-04-13 | In-browser LLM inference engine that runs models locally on WebGPU, exposing an OpenAI-style API from the MLC LLM project. |
 | [LMCache/LMCache](https://github.com/LMCache/LMCache) | 12.1k | 2024-05-28 | KV-cache management layer for LLM serving that integrates with vLLM, reusing cached key/value state to reduce latency and compute in scalable inference. |
 | [magnitudedev/magnitude](https://github.com/magnitudedev/magnitude) | 7k | 2026-06-12 | Rust inference engine that autotunes its kernels for your hardware to run each model as fast as possible. Runs on Apple Silicon, NVIDIA, AMD or CPU and connects to coding agents. |
-| [0xSojalSec/airllm](https://github.com/0xSojalSec/airllm) | 3.1k | 2025-09-26 | Fork of AirLLM, a Python library that runs very large LLMs on small GPUs by loading layers from disk during inference instead of keeping the whole model in VRAM. |
+| [0xSojalSec/airllm](https://github.com/0xSojalSec/airllm) | 3.1k | 2025-09-26 | Fork of AirLLM, a Python library that runs very large LLMs on small GPUs by loading layers from disk per step. Also includes QLoRA and DPO fine-tuning tools. |
 | [youssofal/MTPLX](https://github.com/youssofal/MTPLX) | 2.6k | 2026-05-02 | Mac app and CLI that serves local Qwen models on Apple Silicon using native multi-token-prediction speculative decoding, with OpenAI- and Anthropic-compatible local endpoints. |
 | [vllm-project/vllm-metal](https://github.com/vllm-project/vllm-metal) | 1.9k | 2025-12-12 | Community-maintained vLLM hardware plugin that runs vLLM on Apple Silicon Macs, using MLX as the primary compute backend. |
 | [turboderp-org/exllamav3](https://github.com/turboderp-org/exllamav3) | 1.7k | 2025-04-06 | Inference and quantization library for running LLMs on consumer GPUs, introducing the EXL3 quantization format with flexible bitrates and parallel inference. |
@@ -741,7 +730,7 @@ Speech models and engines for TTS, speech recognition and VAD, plus voice and di
 | [kitlangton/Hex](https://github.com/kitlangton/Hex) (archived) | 2.9k | 2025-01-27 | Archived macOS hold-to-talk transcription app that pastes the transcribed text where you are typing. Development moved to anomalyco/hex; this repo preserves the legacy Swift app. |
 | [amicalhq/amical](https://github.com/amicalhq/amical) | 1.6k | 2025-05-08 | Open-source, local-first desktop dictation and note-taking app that uses open-source speech models and works offline. Installable via Homebrew on macOS. |
 | [Ampixa/sanoTTS](https://github.com/Ampixa/sanoTTS) | 797 | 2026-07-11 | Family of tiny neural text-to-speech voices of 294k to 2.3M parameters that need no cloud or NPU. They run in real time on an ESP32-S3 or in the browser via WASM. |
-| [FireRedTeam/FireRedChat](https://github.com/FireRedTeam/FireRedChat) | 593 | 2025-09-09 | Self-hosted full-duplex voice interaction system with released pVAD, turn-detector, FireRedTTS and FireRedASR components for a cascaded pipeline. |
+| [FireRedTeam/FireRedChat](https://github.com/FireRedTeam/FireRedChat) | 593 | 2025-09-09 | Self-hosted real-time voice agent system with WebUI and Docker services, plus released pVAD, turn-detector, FireRedTTS and FireRedASR components in a cascaded pipeline. |
 | [steipete/sag](https://github.com/steipete/sag) | 583 | 2025-12-07 | Go CLI that works like the macOS say command but speaks with ElevenLabs voices. Streams to speakers by default, can list voices or save audio files. |
 | [freestyle-voice/freestyle](https://github.com/freestyle-voice/freestyle) | 488 | 2026-05-25 | Desktop voice app that dictates into any app via a hotkey, helps with writing, and can check in on a schedule with proactive reminders across connected apps. |
 | [second-state/qwen3_asr_rs](https://github.com/second-state/qwen3_asr_rs) | 254 | 2026-02-20 | Pure Rust implementation of Qwen3-ASR speech recognition, shipped as a cross-platform CLI and an OpenAI-compatible transcription API server. |
@@ -796,6 +785,25 @@ Small libraries and CLIs for using LLMs inside ordinary programs, shells and dev
 | [vercel-labs/ai-cli](https://github.com/vercel-labs/ai-cli) | 825 | 2025-07-28 | Terminal CLI that generates text, images, video and audio and makes typed decisions through composable commands with stdin support. Built on the Vercel AI SDK and AI Gateway; requires Node.js 22+. |
 | [junaid-mahmood/nlsh](https://github.com/junaid-mahmood/nlsh) | 473 | 2026-01-22 | Natural-language shell for macOS and Linux that translates plain-English requests into terminal commands. |
 | [samwho/llmwalk](https://github.com/samwho/llmwalk) | 211 | 2025-12-14 | Python tool that explores the answer-space of an MLX model by branching on every token the sampler would consider and ranking completions by probability. |
-| [wobsoriano/oxlint-plugin-jev](https://github.com/wobsoriano/oxlint-plugin-jev) | 88 | 2026-09-19 | Experimental Oxlint plugin whose lint rules are plain-English yes/no questions about a function, call, JSX element or file. Each match is sent to TypeSafe's Jev to be answered. |
-| [BoundaryML/feelings](https://github.com/BoundaryML/feelings) | 24 | 2026-09-19 | Example language-style project that adds a typed .feels() method, an "AI if statement", to any value. Built on TypeSafe AI's Jev and BAML. |
 | [Mechse/saft](https://github.com/Mechse/saft) | 20 | 2026-05-24 | CLI written in Odin that generates Git commit messages with Apple's on-device language model, needing no API keys or cloud access. |
+
+## Needs review
+
+Projects I couldn't confidently describe or categorize yet. Each has a best-guess section and the reason it's here.
+
+| Project | Stars | Created | Best guess | Description | Why it's here |
+|---|--:|---|---|---|---|
+| [agenticnotetaking/arscontexta](https://github.com/agenticnotetaking/arscontexta) | 3.5k | 2026-02-15 | Agent memory systems | Claude Code plugin that interviews you about how you work and generates a personalised Markdown knowledge system, including folder structure, context files, hooks, navigation maps and note templates. | Plugin that generates a notes vault; memory vs harness plugin unclear |
+| [OpenBMB/EdgeClaw](https://github.com/OpenBMB/EdgeClaw) | 1.2k | 2026-02-13 | Personal & team assistant agents | Edge-cloud collaborative personal assistant built on OpenClaw, adding Claude Code-style features. Aims to balance security, cost and efficiency between local and cloud models. | DeepWiki content looks like upstream OpenClaw; fork's added value unclear |
+| [antfu/ghfs](https://github.com/antfu/ghfs) | 276 | 2026-03-04 | Agent workspaces & virtual filesystems | Syncs open GitHub issues and pull requests into a local .ghfs directory for offline viewing and batch operations by humans and agents. README says work in progress. | Not indexed; README says WIP; category is a stretch |
+| [arsumbris/arsumbris](https://github.com/arsumbris/arsumbris) | 265 | 2026-09-13 | Agent frameworks & SDKs | Early-alpha macOS agent-native IDE for typed knowledge, where types, skills, tools and UI components live in composable repos. Agent harnesses connect over MCP. | Not indexed; early alpha, macOS-only IDE; category unclear |
+| [pass-agent/loomkin](https://github.com/pass-agent/loomkin) | 181 | 2026-02-28 | Multi-agent collaboration & simulation | Elixir/OTP coding assistant where agents form teams, spawn specialists, share discoveries and vote, with a persistent decision graph and live mission-control UI. Usable via CLI, LiveView or API. | Elixir coding assistant with agent teams; agents.multi vs coding.agents |
+| [iii-experimental/agentos](https://github.com/iii-experimental/agentos) | 162 | 2026-03-01 | Personal & team assistant agents | Agent OS made of 65 narrow Rust worker binaries, one per domain, that register Functions and Triggers on the iii engine, and which the project describes as self-evolving. | Not indexed; experimental iii-engine workers; purpose vague |
+| [Weber-GeoML/Choir](https://github.com/Weber-GeoML/Choir) | 116 | 2026-09-21 | Multi-agent collaboration & simulation | Open protocol for distributed multi-agent autoformalization: an orchestrator turns a large Lean or Isabelle formalization plan into GitHub tasks that contributors claim and work with their own agents. | Not indexed; fits both multi-agent and domain agents |
+| [zou-group/humanlm](https://github.com/zou-group/humanlm) | 93 | 2026-02-11 | Agent evals, benchmarks & training | Stanford research code for training language models to simulate specific users by aligning to their latent states rather than imitating their responses. | Research code; DeepWiki shows a human-eval tool, README a training method |
+| [wobsoriano/oxlint-plugin-jev](https://github.com/wobsoriano/oxlint-plugin-jev) | 88 | 2026-09-19 | LLM app utilities & typed AI functions | Experimental Oxlint plugin whose lint rules are plain-English yes/no questions about a function, call, JSX element or file. Each match is sent to TypeSafe's Jev to be answered. | Not indexed; experimental plugin, category debatable |
+| [seth-schultz/orchestr8](https://github.com/seth-schultz/orchestr8) | 69 | 2025-10-31 | Harness plugins, hooks & config | Claude Code extension that packages agents and workflows to make Claude act as a full software engineering team. | Not indexed; marketing-heavy README, unclear concrete function |
+| [BoundaryML/feelings](https://github.com/BoundaryML/feelings) | 24 | 2026-09-19 | LLM app utilities & typed AI functions | Example language-style project that adds a typed .feels() method, an ""AI if statement"", to any value. Built on TypeSafe AI's Jev and BAML. | Not indexed; example/demo project with unclear purpose |
+| [siliconjungle/-shapeshift-labs-loom](https://github.com/siliconjungle/-shapeshift-labs-loom) | 13 | 2026-06-10 | Code intelligence for agents | Project-level CLI that creates a .loom workspace, scans source into a content-addressed semantic graph and coordinates agent swarms, with Frontier language tooling. | Not indexed; broad scope (graph, swarms, language tooling) |
+| [jbellerb/sprite-hacks](https://github.com/jbellerb/sprite-hacks) | 13 | 2026-02-05 | Agent VM & container sandboxes | Scripts and demos from experimenting with Fly Sprites, including a reverse sshfs mount of a local directory and a jj sprite-workspace alias. | Not indexed; scratch scripts and demos, no clear purpose |
+| [janwilmake/sandbox](https://github.com/janwilmake/sandbox) | 5 | 2026-03-24 | Agent VM & container sandboxes | Experiment exposing a Cloudflare sandbox terminal as an agent tool, with the user logged into their own stripe, git, gh and wrangler and the sandbox sleeping when idle. | Not indexed; self-described experiment with TODOs |

@@ -27,9 +27,12 @@ def stars(n):
 
 
 sections = read("sections.tsv")     # area, sub_id, subcategory, intro (in display order)
-projects = read("projects.tsv")     # repo, sub_id, stars, created, archived, blurb
+projects = read("projects.tsv")     # repo, sub_id, stars, created, archived, blurb[, review_note]
+review = [p for p in projects if p.get("review_note")]
+projects_main = [p for p in projects if not p.get("review_note")]
+names = {s["sub_id"]: s["subcategory"] for s in sections}
 by_sub = defaultdict(list)
-for p in projects:
+for p in projects_main:
     by_sub[p["sub_id"]].append(p)
 
 areas = []
@@ -55,6 +58,17 @@ for area, subs in areas:
             flag = " (archived)" if p["archived"] == "true" else ""
             body.append(f"| [{p['repo']}](https://github.com/{p['repo']}){flag} | {stars(p['stars'])} | {p['created']} | {p['blurb'].replace('|', '/')} |")
         body.append("")
+
+if review:
+    toc.append(f"- [Needs review](#{slug('Needs review', seen)}) ({len(review)})")
+    body += ["## Needs review", "",
+             "Projects I couldn't confidently describe or categorize yet. Each has a best-guess section and the reason it's here.", "",
+             "| Project | Stars | Created | Best guess | Description | Why it's here |", "|---|--:|---|---|---|---|"]
+    for p in sorted(review, key=lambda p: -int(p["stars"])):
+        flag = " (archived)" if p["archived"] == "true" else ""
+        body.append(f"| [{p['repo']}](https://github.com/{p['repo']}){flag} | {stars(p['stars'])} | {p['created']} | "
+                    f"{names.get(p['sub_id'], p['sub_id'])} | {p['blurb'].replace('|', '/')} | {p['review_note'].replace('|', '/')} |")
+    body.append("")
 
 head = [
     "# Awesome AI", "",
