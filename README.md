@@ -1,8 +1,8 @@
 # Awesome AI
 
-A personal, categorized index of 468 AI projects I've starred: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.
+A personal, categorized index of 477 AI projects I've starred: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.
 
-_Last generated 2026-10-17. Star counts are a snapshot._
+_Last generated 2026-10-30. Star counts are a snapshot._
 
 ## Contents
 
@@ -12,15 +12,15 @@ _Last generated 2026-10-17. Star counts are a snapshot._
   - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (10)
   - [Domain & research agents](#domain--research-agents) (6)
   - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (7)
-- [Coding agents](#coding-agents) (115)
+- [Coding agents](#coding-agents) (119)
   - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (13)
   - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (20)
   - [Parallel agent orchestration](#parallel-agent-orchestration) (13)
   - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
   - [Autonomous loops & background agents](#autonomous-loops--background-agents) (16)
   - [Harness plugins, hooks & config](#harness-plugins-hooks--config) (21)
-  - [Agent task tracking & planning](#agent-task-tracking--planning) (8)
-  - [Agent sessions, usage & observability](#agent-sessions-usage--observability) (13)
+  - [Agent task tracking & planning](#agent-task-tracking--planning) (10)
+  - [Agent sessions, usage & observability](#agent-sessions-usage--observability) (15)
 - [Agent skills](#agent-skills) (44)
   - [Skill collections & packs](#skill-collections--packs) (11)
   - [Visual & media output skills](#visual--media-output-skills) (14)
@@ -30,12 +30,12 @@ _Last generated 2026-10-17. Star counts are a snapshot._
   - [Agent VM & container sandboxes](#agent-vm--container-sandboxes) (16)
   - [Code interpreters & language sandboxes](#code-interpreters--language-sandboxes) (7)
   - [Agent workspaces & virtual filesystems](#agent-workspaces--virtual-filesystems) (3)
-- [Agent memory, context & retrieval](#agent-memory-context--retrieval) (55)
-  - [Agent memory systems](#agent-memory-systems) (17)
+- [Agent memory, context & retrieval](#agent-memory-context--retrieval) (60)
+  - [Agent memory systems](#agent-memory-systems) (21)
   - [Code intelligence for agents](#code-intelligence-for-agents) (10)
   - [RAG, knowledge graphs & context layers](#rag-knowledge-graphs--context-layers) (14)
   - [Semantic & hybrid search](#semantic--hybrid-search) (6)
-  - [Token & context-window optimization](#token--context-window-optimization) (8)
+  - [Token & context-window optimization](#token--context-window-optimization) (9)
 - [Agent tools & integrations](#agent-tools--integrations) (47)
   - [MCP platforms & tool plumbing](#mcp-platforms--tool-plumbing) (7)
   - [Service connectors (MCP servers, API CLIs & clients)](#service-connectors-mcp-servers-api-clis--clients) (10)
@@ -310,6 +310,8 @@ Issue trackers, task graphs and plan stores designed for agents and humans to pl
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
+| [Fission-AI/OpenSpec](https://github.com/Fission-AI/OpenSpec) | 73.5k | 2025-08-05 | Spec-driven workflow for coding agents that keeps proposals, requirements, technical designs and implementation tasks as Markdown, with shared Git-backed stores for cross-repo planning. |
+| [gastownhall/beads](https://github.com/gastownhall/beads) | 28.3k | 2025-10-12 | Dolt-backed graph issue tracker for coding agents, with dependency-aware ready tasks, atomic claims, durable project facts and synchronization across machines and agents. |
 | [Dicklesworthstone/beads_viewer](https://github.com/Dicklesworthstone/beads_viewer) | 1.7k | 2025-11-26 | Keyboard-driven terminal interface for the Beads issue tracker with list, kanban and dependency-graph views, PageRank and critical-path insights, and a robot-mode JSON API. |
 | [hmans/beans](https://github.com/hmans/beans) | 951 | 2025-12-06 | Go CLI flat-file issue tracker that stores issues alongside the code for use by humans and coding agents. |
 | [asdecided/core](https://github.com/asdecided/core) | 299 | 2026-06-01 | Rust engine that keeps requirements, decisions and designs as typed Markdown in a repo, validates them, and serves relevant decisions to agents over read-only MCP without embeddings. |
@@ -326,10 +328,12 @@ Tools that capture, replay, search or measure coding-agent sessions, covering to
 | Project | Stars | Created | Description |
 |---|--:|---|---|
 | [ccusage/ccusage](https://github.com/ccusage/ccusage) | 19k | 2025-05-29 | CLI that analyzes token usage and cost for coding-agent tools from their local data files, run via `npx ccusage`. |
+| [kenn-io/agentsview](https://github.com/kenn-io/agentsview) | 6.3k | 2026-02-19 | Local session archive with a web UI, desktop app and CLI for browsing and searching coding-agent transcripts, tracking usage and costs, and exposing the archive through read-only MCP tools. |
 | [entireio/cli](https://github.com/entireio/cli) | 5.2k | 2026-01-02 | Go CLI that hooks into Git to capture AI agent sessions and index them alongside commits, giving a searchable record of prompts, responses and files touched. |
 | [git-ai-project/git-ai](https://github.com/git-ai-project/git-ai) | 2.8k | 2025-07-02 | Git extension that links every AI-generated line in a repo to the agent, model and prompts that produced it, so the intent survives past the commit. |
 | [cosmtrek/mindwalk](https://github.com/cosmtrek/mindwalk) | 1.4k | 2026-07-09 | Go tool that replays coding-agent sessions on a 3D map of the codebase, showing which parts of the repo the agent explored and treated as relevant. |
 | [specstoryai/getspecstory](https://github.com/specstoryai/getspecstory) | 1.4k | 2024-12-13 | Local-first extensions for AI IDEs and terminal agents that capture and index conversation history, with options to sync to the cloud and turn histories into reusable skills. |
+| [Dicklesworthstone/coding_agent_session_search](https://github.com/Dicklesworthstone/coding_agent_session_search) | 1.2k | 2025-11-21 | Rust TUI and CLI (cass) that indexes local coding-agent session histories into one searchable timeline, with lexical and optional semantic search plus robot/JSON output for agents. |
 | [waynesutton/opensync](https://github.com/waynesutton/opensync) | 410 | 2026-01-17 | Cloud-synced dashboards for OpenCode, Claude Code, Codex, Cursor and Factory Droid that track session activity, tool usage and token spend, with semantic search and eval dataset export. |
 | [Piebald-AI/splitrail](https://github.com/Piebald-AI/splitrail) | 224 | 2025-07-12 | Rust token-usage and cost monitor that reads local session data for Claude Code, Codex, Gemini, Qwen Code, Cline, Copilot, OpenCode and other agents, with real-time tracking. |
 | [Necmttn/ax](https://github.com/Necmttn/ax) | 117 | 2026-05-08 | Local-first Agent Experience layer: the axctl CLI ingests Claude Code and Codex sessions into a SurrealDB graph so agents and users can analyze mistakes and feed lessons back into later runs. |
@@ -475,17 +479,21 @@ Persistent memory layers that carry facts and experience across agent sessions, 
 | [volcengine/OpenViking](https://github.com/volcengine/OpenViking) | 40.2k | 2026-01-05 | Context database for agents that unifies memory, RAG knowledge and skills under a single virtual filesystem, with self-evolving context. |
 | [TencentCloud/TencentDB-Agent-Memory](https://github.com/TencentCloud/TencentDB-Agent-Memory) | 29.5k | 2026-04-07 | Team-level memory hub that turns conversations, docs and code into four shared assets (chat memory, skills, LLM wiki, code graph) governed and reused across agents and frameworks. |
 | [MemoriLabs/Memori](https://github.com/MemoriLabs/Memori) | 17.2k | 2025-07-24 | LLM-, datastore- and framework-agnostic memory infrastructure that turns agent actions and conversations into structured persistent state, deployable on managed cloud, VPC or on-premises. |
+| [akitaonrails/ai-memory](https://github.com/akitaonrails/ai-memory) | 14.6k | 2026-05-21 | Rust memory server for coding agents that captures lifecycle events into a Git-backed Markdown wiki with a rebuildable search index. Shares knowledge across harnesses and supports explicit, claim-once handoffs; capture, search and handoffs need no LLM by default. |
 | [NevaMind-AI/memU](https://github.com/NevaMind-AI/memU) | 14.6k | 2025-07-29 | Agent-driven personal memory system that stores memory as a wiki shared across sessions, agents and devices. |
 | [MemTensor/MemOS](https://github.com/MemTensor/MemOS) | 11.9k | 2025-07-06 | Memory operating system for LLM agents offering persistent memory, hybrid retrieval and cross-task skill reuse, with a DeepSeek Harness integration and a local memory viewer. |
+| [Gentleman-Programming/engram](https://github.com/Gentleman-Programming/engram) | 7.7k | 2026-02-16 | Agent-agnostic Go memory tool with a local SQLite database and FTS5 search, exposed through MCP, CLI, HTTP and a TUI. Keeps curated project observations and session handoffs, with Git Sync and optional cloud replication for sharing. |
 | [aiming-lab/SimpleMem](https://github.com/aiming-lab/SimpleMem) | 3.8k | 2026-01-01 | ICML 2026 lifelong memory system for LLM agents that stores, compresses and retrieves text and multimodal memories, usable through MCP or Python. |
 | [letta-ai/claude-subconscious](https://github.com/letta-ai/claude-subconscious) | 2.9k | 2026-01-14 | Demo built on the Letta Code SDK where a background Letta agent watches Claude Code sessions, builds memory and feeds guidance back. Not meant for production; Letta Code is the supported route. |
 | [zilliztech/memsearch](https://github.com/zilliztech/memsearch) | 2.8k | 2026-02-09 | Cross-agent semantic memory layer for Claude Code, Codex and others, storing memories as Markdown indexed in Milvus, with optional remote reranking. |
 | [Asymptote-Labs/agent-beacon](https://github.com/Asymptote-Labs/agent-beacon) | 1.8k | 2026-05-12 | Memory layer that captures session history across Claude Code, Cursor, Codex, OpenCode and 20+ other harnesses and distills workflows, corrections and debugging patterns into reusable knowledge. |
+| [mex-memory/mex](https://github.com/mex-memory/mex) | 1.8k | 2026-03-21 | Git-backed shared project memory for engineers and coding agents, with readable Markdown knowledge, code-linked explanations, reviewed proposals and structured Relay handoffs. A local Hub supports browsing and review; Git carries canonical records between teammates. |
 | [verygoodplugins/automem](https://github.com/verygoodplugins/automem) | 822 | 2025-09-16 | Graph and vector long-term memory service that lets Claude, Cursor, Codex and other assistants recall decisions, preferences and relationships across sessions. |
 | [Dicklesworthstone/cass_memory_system](https://github.com/Dicklesworthstone/cass_memory_system) | 448 | 2025-12-07 | Procedural memory for coding agents that turns scattered session history into persistent cross-agent memory, with a JSON mode for agent use. |
 | [jumbocontext/cli](https://github.com/jumbocontext/cli) | 278 | 2025-12-05 | CLI that stores project details once and gives Claude, Codex, Copilot and other coding agents persistent memory, session continuity and goal tracking. |
 | [glommer/memelord](https://github.com/glommer/memelord) | 197 | 2026-02-17 | In-process per-project persistent memory for coding agents, built on Turso and refined with reinforcement signals, so agents keep project patterns and user corrections across sessions. |
 | [nikita-rulenko/Helixir](https://github.com/nikita-rulenko/Helixir) | 88 | 2025-11-29 | Rust memory control plane that keeps one governed reasoning graph shared across Codex, Claude Code, Cursor and other MCP clients, with full-host and remote-agent deployment modes. |
+| [crosshatch/traits](https://github.com/crosshatch/traits) | 69 | 2026-09-30 | Turns feedback into reusable coding preferences stored as editable Markdown in .agents/traits/. MCP tools propose or reconcile traits with approval and review selected source files against them, helping preferences persist across tasks and sessions. |
 | [thezpack/personal-context-layer](https://github.com/thezpack/personal-context-layer) | 1 | 2026-07-08 | Local-first MCP server that keeps a live model of your schedule, sleep and cognitive load and hands it to connected AI sessions so they can adapt length and tone. |
 
 ### Code intelligence for agents
@@ -547,6 +555,7 @@ Tools that cut tokens sent to or from LLMs: output compressors, compact formats,
 |---|--:|---|---|
 | [rtk-ai/rtk](https://github.com/rtk-ai/rtk) | 83.7k | 2026-01-22 | Single-binary Rust CLI proxy that filters and compresses output of common developer commands before it reaches the LLM, claiming 60-90% token reduction. |
 | [headroomlabs-ai/headroom](https://github.com/headroomlabs-ai/headroom) | 75.6k | 2026-01-07 | Library, proxy and MCP server that compresses tool outputs, logs, files, RAG chunks and conversation history before they reach the LLM, claiming 20% fewer tokens for coding agents and more for JSON. |
+| [mksglu/context-mode](https://github.com/mksglu/context-mode) | 32.9k | 2026-02-23 | MCP server that runs tools in sandboxes and retrieves selected output instead of flooding context, with SQLite-backed session event retrieval for continuity after compaction. Source-available under ELv2. |
 | [toon-format/toon](https://github.com/toon-format/toon) | 25.5k | 2025-10-22 | Token-Oriented Object Notation, a compact human-readable encoding of the JSON data model for LLM prompts, with a TypeScript SDK, CLI, spec and benchmarks. |
 | [nicobailon/pi-boomerang](https://github.com/nicobailon/pi-boomerang) | 307 | 2026-03-02 | Extension for the pi coding agent that runs a task autonomously, then replaces its raw turn history in later context with a handoff summary to save tokens. |
 | [Hmbown/aleph](https://github.com/Hmbown/aleph) | 218 | 2025-12-15 | MCP server and skill implementing Recursive Language Models by keeping search indexes, code execution and evidence in a Python process outside the prompt window. |
