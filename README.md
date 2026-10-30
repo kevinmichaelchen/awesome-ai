@@ -51,6 +51,9 @@ _Last generated 2026-10-30. Star counts are a snapshot._
   - [Vision, video & image models](#vision-video--image-models) (8)
   - [LLM gateways, routers & model catalogs](#llm-gateways-routers--model-catalogs) (15)
   - [LLM app utilities & typed AI functions](#llm-app-utilities--typed-ai-functions) (4)
+- [Notable GitHub people & organizations](#notable-github-people--organizations) (13)
+  - [People](#people)
+  - [Organizations](#organizations)
 - [Needs review](#needs-review) (14)
 
 ## Agent frameworks & assistants
@@ -797,6 +800,37 @@ Small libraries and CLIs for using LLMs inside ordinary programs, shells and dev
 | [junaid-mahmood/nlsh](https://github.com/junaid-mahmood/nlsh) | 473 | 2026-01-22 | Natural-language shell for macOS and Linux that translates plain-English requests into terminal commands. |
 | [samwho/llmwalk](https://github.com/samwho/llmwalk) | 211 | 2025-12-14 | Python tool that explores the answer-space of an MLX model by branching on every token the sampler would consider and ranking completions by probability. |
 | [Mechse/saft](https://github.com/Mechse/saft) | 20 | 2026-05-24 | CLI written in Odin that generates Git commit messages with Apple's on-device language model, needing no API keys or cloud access. |
+
+## Notable GitHub people & organizations
+
+A curated starting point for people and organizations whose projects expanded what developers can build with AI, from accessible model training and local inference to agent harnesses and shared protocols. Inclusion reflects the specific contributions below; this is not an exhaustive list or a ranking. Representative projects may sit outside the starred-project catalog and do not affect its counts.
+
+### People
+
+Alphabetical by name.
+
+| GitHub | Contribution & why it matters | Representative projects |
+|---|---|---|
+| [Andrej Karpathy (@karpathy)](https://github.com/karpathy) | Made neural-network internals and language-model training easier to study and reproduce through small, readable implementations, from scalar autograd to raw C/CUDA training. | [karpathy/micrograd](https://github.com/karpathy/micrograd), [karpathy/llm.c](https://github.com/karpathy/llm.c) |
+| [Georgi Gerganov (@ggerganov)](https://github.com/ggerganov) | Created the llama.cpp and whisper.cpp projects, bringing language-model and speech inference to ordinary local hardware through portable C/C++ implementations. The projects now live under ggml-org. | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp), [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) |
+| [Mario Zechner (@badlogic)](https://github.com/badlogic) | Created Pi, a minimal, extensible coding-agent harness with an embeddable SDK, making the agent loop available for custom workflows and applications. The project now lives under earendil-works. | [earendil-works/pi](https://github.com/earendil-works/pi) |
+| [Simon Willison (@simonw)](https://github.com/simonw) | Built LLM, a CLI and Python library that makes local and hosted models scriptable through a shared interface and plugins, supporting repeatable experiments and everyday developer workflows. | [simonw/llm](https://github.com/simonw/llm) |
+| [Yohei Nakajima (@yoheinakajima)](https://github.com/yoheinakajima) | Explored autonomous task planning with the original BabyAGI in 2023, then self-building agents with its successor. These compact experiments make agent-loop ideas available to inspect and adapt; they are not production frameworks. | [yoheinakajima/babyagi](https://github.com/yoheinakajima/babyagi) |
+
+### Organizations
+
+Alphabetical by name.
+
+| GitHub | Contribution & why it matters | Representative projects |
+|---|---|---|
+| [Anomaly (@anomalyco)](https://github.com/anomalyco) | Builds OpenCode and models.dev, pairing an open coding agent with shared model capability and pricing data that other tools can reuse. | [anomalyco/opencode](https://github.com/anomalyco/opencode), [anomalyco/models.dev](https://github.com/anomalyco/models.dev) |
+| [Anthropic (@anthropics)](https://github.com/anthropics) | Builds Claude Code, bringing codebase exploration, edits, command execution and Git workflows into a conversational coding-agent interface. | [anthropics/claude-code](https://github.com/anthropics/claude-code) |
+| [ggml (@ggml-org)](https://github.com/ggml-org) | Develops llama.cpp and whisper.cpp with portable inference, quantization and hardware backends, making local language and speech models practical across CPUs and GPUs. | [ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp), [ggml-org/whisper.cpp](https://github.com/ggml-org/whisper.cpp) |
+| [Hugging Face (@huggingface)](https://github.com/huggingface) | Provides reusable model implementations through Transformers and parameter-efficient adaptation through PEFT, reducing the work needed to run and fine-tune pretrained models. | [huggingface/transformers](https://github.com/huggingface/transformers), [huggingface/peft](https://github.com/huggingface/peft) |
+| [LangChain (@langchain-ai)](https://github.com/langchain-ai) | Builds LangGraph for long-running, stateful agent orchestration and Deep Agents for planning, filesystem access and delegation, making those execution patterns reusable. | [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph), [langchain-ai/deepagents](https://github.com/langchain-ai/deepagents) |
+| [Model Context Protocol (@modelcontextprotocol)](https://github.com/modelcontextprotocol) | Maintains shared protocol infrastructure and reference servers for connecting models to tools and data, so integrations can be reused across compatible clients rather than rebuilt for each harness. | [modelcontextprotocol/servers](https://github.com/modelcontextprotocol/servers) |
+| [OpenAI (@openai)](https://github.com/openai) | Builds Codex CLI, an open coding-agent implementation that developers can run locally and inspect, extending model assistance into repository edits and command execution. | [openai/codex](https://github.com/openai/codex) |
+| [Vercel (@vercel)](https://github.com/vercel) | Builds the provider-agnostic AI SDK and the filesystem-first Eve framework, giving TypeScript developers reusable interfaces for model calls, agent tools and durable agent applications. | [vercel/ai](https://github.com/vercel/ai), [vercel/eve](https://github.com/vercel/eve) |
 
 ## Needs review
 

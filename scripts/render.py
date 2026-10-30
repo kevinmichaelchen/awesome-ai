@@ -28,6 +28,7 @@ def stars(n):
 
 sections = read("sections.tsv")     # area, sub_id, subcategory, intro (in display order)
 projects = read("projects.tsv")     # repo, sub_id, stars, created, archived, blurb[, review_note]
+notables = read("notables.tsv")     # kind, github, name, contribution, projects (semicolon-separated repos)
 review = [p for p in projects if p.get("review_note")]
 projects_main = [p for p in projects if not p.get("review_note")]
 names = {s["sub_id"]: s["subcategory"] for s in sections}
@@ -58,6 +59,24 @@ for area, subs in areas:
             flag = " (archived)" if p["archived"] == "true" else ""
             body.append(f"| [{p['repo']}](https://github.com/{p['repo']}){flag} | {stars(p['stars'])} | {p['created']} | {p['blurb'].replace('|', '/')} |")
         body.append("")
+
+toc.append(f"- [Notable GitHub people & organizations](#{slug('Notable GitHub people & organizations', seen)}) ({len(notables)})")
+body += [
+    "## Notable GitHub people & organizations", "",
+    "A curated starting point for people and organizations whose projects expanded what developers can build with AI, "
+    "from accessible model training and local inference to agent harnesses and shared protocols. "
+    "Inclusion reflects the specific contributions below; this is not an exhaustive list or a ranking. "
+    "Representative projects may sit outside the starred-project catalog and do not affect its counts.", "",
+]
+for kind, heading in [("person", "People"), ("organization", "Organizations")]:
+    toc.append(f"  - [{heading}](#{slug(heading, seen)})")
+    body += [f"### {heading}", "", "Alphabetical by name.", "",
+             "| GitHub | Contribution & why it matters | Representative projects |", "|---|---|---|"]
+    for n in sorted((n for n in notables if n["kind"] == kind), key=lambda n: n["name"].casefold()):
+        links = ", ".join(f"[{repo}](https://github.com/{repo})" for repo in n["projects"].split(";"))
+        body.append(f"| [{n['name']} (@{n['github']})](https://github.com/{n['github']}) | "
+                    f"{n['contribution'].replace('|', '/')} | {links} |")
+    body.append("")
 
 if review:
     toc.append(f"- [Needs review](#{slug('Needs review', seen)}) ({len(review)})")
