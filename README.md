@@ -1,19 +1,19 @@
 # Awesome AI
 
-A personal, categorized index of 477 AI projects I've starred: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.
+A personal, categorized index of 479 AI projects I've starred: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.
 
 _Last generated 2026-10-30. Star counts are a snapshot._
 
 ## Contents
 
-- [Agent frameworks & assistants](#agent-frameworks--assistants) (76)
-  - [Agent frameworks & SDKs](#agent-frameworks--sdks) (17)
+- [Agent frameworks & assistants](#agent-frameworks--assistants) (77)
+  - [Agent frameworks & SDKs](#agent-frameworks--sdks) (18)
   - [Personal & team assistant agents](#personal--team-assistant-agents) (36)
   - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (10)
   - [Domain & research agents](#domain--research-agents) (6)
   - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (7)
-- [Coding agents](#coding-agents) (119)
-  - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (13)
+- [Coding agents](#coding-agents) (120)
+  - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (14)
   - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (20)
   - [Parallel agent orchestration](#parallel-agent-orchestration) (13)
   - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
@@ -66,6 +66,7 @@ Libraries, SDKs and runtimes for building agents in TypeScript, Python, Rust, Go
 | [mastra-ai/mastra](https://github.com/mastra-ai/mastra) | 28.9k | 2024-08-06 | TypeScript framework for building AI applications and agents, distributed as the @mastra/core package. Backed by Y Combinator (W25). |
 | [withastro/flue](https://github.com/withastro/flue) | 8.5k | 2026-02-07 | TypeScript framework for programmable agent harnesses, for building autonomous agents that run in sandboxes, in the style of Claude Code and Codex. |
 | [cloudflare/agents](https://github.com/cloudflare/agents) | 5.8k | 2025-01-29 | SDK for building agents as persistent, stateful execution environments on Cloudflare Durable Objects, where each agent has its own state, storage and lifecycle. |
+| [vercel/eve](https://github.com/vercel/eve) | 5.7k | 2026-06-16 | Filesystem-first TypeScript framework for durable AI agents, with conventional folders for instructions, typed tools, skills, message channels and schedules. Includes a terminal UI, human approvals, subagents and Vercel deployment. |
 | [agentjido/jido](https://github.com/agentjido/jido) | 1.9k | 2024-12-16 | Elixir framework for autonomous agents and dynamic multi-agent workflows, built around distributed, supervised behavior on the BEAM. |
 | [rivet-dev/agents](https://github.com/rivet-dev/agents) | 1.6k | 2026-01-25 | Rivet's agent infrastructure that runs agents such as Pi as durable Rivet Actors with memory that survives restarts, plus a sandbox adapter package. |
 | [openclaw/lobster](https://github.com/openclaw/lobster) | 1.3k | 2026-01-18 | OpenClaw-native workflow shell with typed, JSON-first pipelines and approval gates that turns skills and tools into composable, repeatable automations OpenClaw can call in one step. |
@@ -179,6 +180,7 @@ Terminal coding agents and harness cores that read and edit code and run command
 | [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) | 68.6k | 2023-07-14 | Rust coding agent tuned for low-cost open models such as Kimi and GLM, with a Codex-like interface and provider-recommended harness reimplementations. |
 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 22.1k | 2026-05-08 | Open-source Rust coding and research agent for long-running work, built around a Recursive Language Model (RLM) approach to context and designed to improve itself. |
 | [just-every/code](https://github.com/just-every/code) | 4k | 2025-08-10 | Community fork of the Codex CLI that adds browser integration, multi-agent orchestration across OpenAI, Claude and Gemini, theming and reasoning controls while staying compatible with upstream. |
+| [vercel-labs/fx](https://github.com/vercel-labs/fx) | 3.7k | 2026-08-11 | Experimental coding agent CLI written in Zig as a single native binary, with inline terminal output, tools, subagents, skills and MCP. Supports scripting, editor integration over ACP and embedding through the libfx JavaScript library. |
 | [batrachianai/toad](https://github.com/batrachianai/toad) | 3.5k | 2025-07-17 | Python terminal UI called Toad that acts as a unified front end for coding agents implementing the Agent Client Protocol, such as Claude, Gemini, Codex and OpenHands. |
 | [peteromallet/desloppify](https://github.com/peteromallet/desloppify) | 3.2k | 2026-02-11 | Agent harness that combines mechanical detection of dead code, duplication and complexity with subjective LLM review to guide a coding agent in systematically improving codebase quality. |
 | [Dicklesworthstone/pi_agent_rust](https://github.com/Dicklesworthstone/pi_agent_rust) | 1.9k | 2026-02-02 | Rust terminal coding agent CLI with no unsafe code, positioned as a fast-starting alternative to managed-runtime agents. |
