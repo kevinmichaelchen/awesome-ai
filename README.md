@@ -1,29 +1,30 @@
 # Awesome AI
 
-A personal, categorized index of 479 AI projects I've starred: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.
+A personal, categorized index of 516 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
 
 _Last generated 2026-10-30. Star counts are a snapshot._
 
 ## Contents
 
-- [Agent frameworks & assistants](#agent-frameworks--assistants) (82)
+- [Agent frameworks & assistants](#agent-frameworks--assistants) (84)
   - [Agent frameworks & SDKs](#agent-frameworks--sdks) (19)
-  - [Personal & team assistant agents](#personal--team-assistant-agents) (37)
+  - [Personal & team assistant agents](#personal--team-assistant-agents) (39)
   - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (11)
   - [Domain & research agents](#domain--research-agents) (7)
   - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (8)
-- [Coding agents](#coding-agents) (122)
-  - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (14)
-  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (21)
+- [Coding agents](#coding-agents) (138)
+  - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (27)
+  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (22)
   - [Parallel agent orchestration](#parallel-agent-orchestration) (13)
   - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
   - [Autonomous loops & background agents](#autonomous-loops--background-agents) (16)
   - [Harness plugins, hooks & config](#harness-plugins-hooks--config) (22)
   - [Agent task tracking & planning](#agent-task-tracking--planning) (10)
   - [Agent sessions, usage & observability](#agent-sessions-usage--observability) (15)
-- [Agent skills](#agent-skills) (44)
-  - [Skill collections & packs](#skill-collections--packs) (11)
-  - [Visual & media output skills](#visual--media-output-skills) (14)
+  - [Harness protocols & instruction formats](#harness-protocols--instruction-formats) (2)
+- [Agent skills](#agent-skills) (47)
+  - [Skill collections & packs](#skill-collections--packs) (13)
+  - [Visual & media output skills](#visual--media-output-skills) (15)
   - [Behavior, writing & workflow skills](#behavior-writing--workflow-skills) (13)
   - [Skill specs, registries & testing](#skill-specs-registries--testing) (6)
 - [Agent sandboxes & execution](#agent-sandboxes--execution) (28)
@@ -36,21 +37,28 @@ _Last generated 2026-10-30. Star counts are a snapshot._
   - [RAG, knowledge graphs & context layers](#rag-knowledge-graphs--context-layers) (14)
   - [Semantic & hybrid search](#semantic--hybrid-search) (6)
   - [Token & context-window optimization](#token--context-window-optimization) (9)
-- [Agent tools & integrations](#agent-tools--integrations) (48)
-  - [MCP platforms & tool plumbing](#mcp-platforms--tool-plumbing) (7)
+- [Agent tools & integrations](#agent-tools--integrations) (53)
+  - [MCP platforms & tool plumbing](#mcp-platforms--tool-plumbing) (8)
   - [Service connectors (MCP servers, API CLIs & clients)](#service-connectors-mcp-servers-api-clis--clients) (11)
   - [Browser & computer-use automation](#browser--computer-use-automation) (14)
   - [Web crawling & scraping](#web-crawling--scraping) (9)
-  - [Document parsing, OCR & extraction](#document-parsing-ocr--extraction) (7)
-- [Models, inference & LLM access](#models-inference--llm-access) (93)
+  - [Document parsing, OCR & extraction](#document-parsing-ocr--extraction) (8)
+  - [Visual & audio production tools](#visual--audio-production-tools) (3)
+- [Models, inference & LLM access](#models-inference--llm-access) (95)
   - [LLM inference engines & serving](#llm-inference-engines--serving) (16)
   - [Local model runners & desktop AI](#local-model-runners--desktop-ai) (8)
   - [ML frameworks, training & fine-tuning](#ml-frameworks-training--fine-tuning) (9)
-  - [Open model releases & research code](#open-model-releases--research-code) (5)
-  - [Speech, voice & dictation](#speech-voice--dictation) (26)
+  - [Open model releases & research code](#open-model-releases--research-code) (6)
+  - [Speech, voice & dictation](#speech-voice--dictation) (27)
   - [Vision, video & image models](#vision-video--image-models) (8)
   - [LLM gateways, routers & model catalogs](#llm-gateways-routers--model-catalogs) (15)
   - [LLM app utilities & typed AI functions](#llm-app-utilities--typed-ai-functions) (6)
+- [Formal methods & verification](#formal-methods--verification) (6)
+  - [System modeling & model checking](#system-modeling--model-checking) (2)
+  - [Theorem proving & program verification](#theorem-proving--program-verification) (4)
+- [Languages & compilers](#languages--compilers) (3)
+  - [Programming languages](#programming-languages) (2)
+  - [Native & alternative compilers](#native--alternative-compilers) (1)
 - [Notable GitHub people & organizations](#notable-github-people--organizations) (13)
   - [People](#people)
   - [Organizations](#organizations)
@@ -89,6 +97,7 @@ Personal and team assistant agents, from always-on chat-app bots and self-hosted
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
+| [aaif-goose/goose](https://github.com/aaif-goose/goose) | 56k | 2024-08-23 | Rust general-purpose agent with desktop, CLI and API interfaces for coding, research and automation. Supports multiple model providers, ACP-backed subscriptions and MCP extensions; formerly block/goose. |
 | [HKUDS/nanobot](https://github.com/HKUDS/nanobot) | 49.1k | 2026-02-01 | Ultra-lightweight self-hosted personal AI agent framework in Python with a web UI, tools, memory, MCP, scheduled automation and chat-app integrations. |
 | [iOfficeAI/AionUi](https://github.com/iOfficeAI/AionUi) | 33.6k | 2025-08-07 | Open-source desktop cowork app with a built-in agent that also fronts Claude Code, Codex, OpenClaw and 20+ other CLI agents. Offers remote access and 24/7 automation. |
 | [zeroclaw-labs/zeroclaw](https://github.com/zeroclaw-labs/zeroclaw) | 33k | 2026-02-13 | Single Rust binary agent runtime for personal assistants, connecting to about 20 LLM providers and 30+ chat channels. Runs on any OS. |
@@ -102,6 +111,7 @@ Personal and team assistant agents, from always-on chat-app bots and self-hosted
 | [cloudflare/moltworker](https://github.com/cloudflare/moltworker) | 9.9k | 2026-01-27 | Experimental proof of concept for running the OpenClaw personal assistant (formerly Moltbot/Clawdbot) inside a Cloudflare Sandbox on Workers. Not officially supported. |
 | [nullclaw/nullclaw](https://github.com/nullclaw/nullclaw) | 8.1k | 2026-02-16 | Autonomous personal AI assistant runtime written in Zig, aimed at small size and speed. Part of a Null ecosystem with a setup UI (nullhub), orchestrator and observability tools. |
 | [osaurus-ai/osaurus](https://github.com/osaurus-ai/osaurus) | 8.1k | 2025-08-17 | Native macOS harness for AI agents written in Swift, with any model, persistent memory, autonomous execution and cryptographic identity. Runs fully offline. |
+| [CopilotKit/openmuse](https://github.com/CopilotKit/openmuse) | 6k | 2026-09-15 | Alpha self-hostable personal-agent application for mobile and web, built with CopilotKit and AG-UI. Combines a persistent browser, optional Linux workspace, app connectors, durable task plans and visible action review. |
 | [memovai/mimiclaw](https://github.com/memovai/mimiclaw) | 5.8k | 2026-02-04 | C firmware that turns a $5 ESP32-S3 board into a personal AI assistant, reached over Telegram. Runs with no Linux or Node.js on the device. |
 | [thunderbird/thunderbolt](https://github.com/thunderbird/thunderbolt) | 4.8k | 2025-07-23 | Self-hostable AI chat client from the Thunderbird team that lets users choose their own models and keep their data. Early-stage and aimed at enterprise customers. |
 | [TinyAGI/tinyagi](https://github.com/TinyAGI/tinyagi) | 3.6k | 2026-02-09 | Multi-agent, multi-team assistant that runs 24/7 across Discord, WhatsApp and Telegram, where agents with isolated workspaces hand off work to teammates. Aimed at one-person companies. |
@@ -178,14 +188,27 @@ Benchmarks, trajectory analysis, user simulators and training or evolution frame
 
 ### Coding agent CLIs & harness cores
 
-Terminal coding agents and harness cores that read and edit code and run commands, including forks and agents tuned for open or local models.
+Terminal and editor coding-agent cores that read and edit code and run commands, including forks and agents tuned for open or local models.
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
 | [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | 251.9k | 2026-08-13 | Open-source agent harness from DeepSeek AI (`dsh`), built on an everything-is-a-plugin architecture powered by the Cordis framework. |
+| [anomalyco/opencode](https://github.com/anomalyco/opencode) | 223.3k | 2025-04-30 | Open-source coding agent (OpenCode v2) with a terminal UI, build and read-only planning agents, and subagents for searches and multistep work. Also offers a beta desktop app; the CLI is distributed as @opencode/cli. |
+| [anthropics/claude-code](https://github.com/anthropics/claude-code) | 154k | 2025-02-22 | Anthropic coding agent for terminal, IDE and GitHub workflows, with codebase exploration, edits, command execution and plugins. This repository hosts releases, documentation and extensions; the agent is proprietary. |
 | [openai/codex](https://github.com/openai/codex) | 129.6k | 2025-04-13 | OpenAI's coding agent that runs locally in the terminal, also available as an IDE extension and desktop app. |
+| [earendil-works/pi](https://github.com/earendil-works/pi) | 119k | 2025-08-09 | Minimal extensible coding-agent harness with a terminal UI, unified model API, persistent sessions, RPC control and a TypeScript SDK. Customization uses extensions, skills, prompt templates and shareable Pi packages. |
+| [google-gemini/gemini-cli](https://github.com/google-gemini/gemini-cli) | 108.6k | 2025-04-17 | Open-source terminal agent maintained for Gemini Code Assist enterprise workflows on Google Cloud, with tools, extensions and persistent context. Individual Google AI plans moved to Antigravity CLI; not tuned for Gemini 4+. |
+| [cline/cline](https://github.com/cline/cline) | 71.1k | 2024-07-06 | Open-source coding-agent engine shared by a CLI, desktop app, VS Code extension, JetBrains plugin and Node.js SDK. Supports custom tools, agent teams, connectors and scheduled automations. |
 | [openinterpreter/openinterpreter](https://github.com/openinterpreter/openinterpreter) | 68.6k | 2023-07-14 | Rust coding agent tuned for low-cost open models such as Kimi and GLM, with a Codex-like interface and provider-recommended harness reimplementations. |
+| [Aider-AI/aider](https://github.com/Aider-AI/aider) | 49.8k | 2023-05-09 | Terminal pair-programming tool that edits existing repositories with local or hosted language models. Builds a repository map, integrates with Git, and can run linting and tests after edits. |
+| [continuedev/continue](https://github.com/continuedev/continue) | 36.4k | 2023-05-24 | Coding agent offered as a CLI, VS Code extension and JetBrains plugin. The README marks the repository read-only and no longer actively maintained, following its final 2.0.0 release. |
+| [charmbracelet/crush](https://github.com/charmbracelet/crush) | 28.9k | 2025-05-21 | Charm terminal coding agent with multiple model providers, persistent project sessions, LSP context and MCP extensions. Supports switching models mid-session; source is available under FSL-1.1-MIT. |
+| [QwenLM/qwen-code](https://github.com/QwenLM/qwen-code) | 28.8k | 2025-06-26 | Open-source coding agent with terminal, editor, desktop, browser and chat interfaces, plus SDKs. Supports configurable model providers, runtime model switching and extensions for coding workflows. |
+| [Kilo-Org/kilocode](https://github.com/Kilo-Org/kilocode) | 27.8k | 2025-03-10 | Open-source coding agent for VS Code, JetBrains and the terminal, with model switching, custom agents, MCP tools and headless CI operation. Its CLI is an OpenCode fork integrated into the Kilo platform. |
+| [RooCodeInc/Roo-Code](https://github.com/RooCodeInc/Roo-Code) (archived) | 24.3k | 2024-10-31 | Archived VS Code coding agent with Code, Architect, Ask, Debug and custom modes, file and command tools, and MCP support. Preserved as a historical editor-agent project. |
 | [PrimeIntellect-ai/prime-agent](https://github.com/PrimeIntellect-ai/prime-agent) | 22.1k | 2026-05-08 | Open-source Rust coding and research agent for long-running work, built around a Recursive Language Model (RLM) approach to context and designed to improve itself. |
+| [github/copilot-cli](https://github.com/github/copilot-cli) | 11.3k | 2023-01-06 | GitHub Copilot coding agent for interactive terminal work and headless SDK connections, with code editing and GitHub context. This repository distributes the proprietary CLI and documents its use. |
+| [SWE-agent/mini-swe-agent](https://github.com/SWE-agent/mini-swe-agent) | 9k | 2025-06-28 | Minimal Python software-engineering agent for solving GitHub issues, interactive terminal work and benchmark evaluation. The SWE-agent team recommends it as the simpler successor to SWE-agent; current development is v2. |
 | [just-every/code](https://github.com/just-every/code) | 4k | 2025-08-10 | Community fork of the Codex CLI that adds browser integration, multi-agent orchestration across OpenAI, Claude and Gemini, theming and reasoning controls while staying compatible with upstream. |
 | [vercel-labs/fx](https://github.com/vercel-labs/fx) | 3.7k | 2026-08-11 | Experimental coding agent CLI written in Zig as a single native binary, with inline terminal output, tools, subagents, skills and MCP. Supports scripting, editor integration over ACP and embedding through the libfx JavaScript library. |
 | [batrachianai/toad](https://github.com/batrachianai/toad) | 3.5k | 2025-07-17 | Python terminal UI called Toad that acts as a unified front end for coding agents implementing the Agent Client Protocol, such as Claude, Gemini, Codex and OpenHands. |
@@ -204,6 +227,7 @@ Desktop, native and web workbenches where a human drives one or many coding agen
 | Project | Stars | Created | Description |
 |---|--:|---|---|
 | [stablyai/orca](https://github.com/stablyai/orca) | 95k | 2026-03-17 | Agentic development environment for running Codex, Claude Code, OpenCode or Pi side-by-side, each in its own worktree, with desktop, mobile companion and remote runtime. |
+| [OpenHands/OpenHands](https://github.com/OpenHands/OpenHands) | 92.3k | 2024-03-13 | OpenHands Agent Canvas, a self-hosted control center for coding agents and automations. Runs OpenHands and ACP-compatible harnesses across local, Docker, VM and cloud backends; supports conversations and recurring work. |
 | [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 28.2k | 2026-01-28 | Ghostty-based macOS terminal with vertical tabs and notifications designed for running multiple AI coding agents. |
 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 28.1k | 2026-02-08 | Agent harness control surface for controlling coding agents on your machine from Electron desktop, web and iOS/Android mobile apps. |
 | [getpaseo/paseo](https://github.com/getpaseo/paseo) | 21.2k | 2025-10-13 | Open-source agentic development environment for desktop, mobile, web and CLI that manages Claude Code, Codex, Copilot, OpenCode and other agents alongside editor, terminals, diffs and a browser. |
@@ -354,6 +378,15 @@ Tools that capture, replay, search or measure coding-agent sessions, covering to
 | [saint0x/tl](https://github.com/saint0x/tl) | 17 | 2026-01-02 | Rust version-control layer built on Jujutsu that records a checkpoint on every file change so any working state from an AI-assisted session can be restored. |
 | [captainsafia/stitch](https://github.com/captainsafia/stitch) | 11 | 2025-12-28 | Tool for recording the intent behind code changes (""stitches"") and binding it to git commits and diffs, forming an intent DAG that linear history cannot express. |
 
+### Harness protocols & instruction formats
+
+Shared protocols and repository instruction conventions that connect coding agents to editors and make project context portable across harnesses.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [agentsmd/agents.md](https://github.com/agentsmd/agents.md) | 25.2k | 2025-08-19 | Open AGENTS.md convention for keeping repository context and working instructions in a predictable file that coding agents can discover. The repository also contains the format's documentation website. |
+| [agentclientprotocol/agent-client-protocol](https://github.com/agentclientprotocol/agent-client-protocol) | 4.5k | 2025-06-23 | Agent Client Protocol specification and schema artifacts for connecting code editors to coding agents. Standardizes JSON-RPC messages for sessions, prompts, tools and agent-client interaction. |
+
 ## Agent skills
 
 ### Skill collections & packs
@@ -362,6 +395,7 @@ Bundles of agent skills and plugins grouped around a theme or vendor, such as sc
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
+| [mattpocock/skills](https://github.com/mattpocock/skills) | 307.4k | 2026-02-03 | Composable engineering and productivity skills for coding agents, covering requirements, codebase design, technical-debt cleanup, review and retrospectives. Distributed as editable skills and harness plugins. |
 | [K-Dense-AI/scientific-agent-skills](https://github.com/K-Dense-AI/scientific-agent-skills) | 52.1k | 2025-10-19 | Library of 177 agent skills plus 100+ scientific database integrations for biology, chemistry, medicine and drug discovery. Follows the Agent Skills standard for Claude Code, Cursor and Codex. |
 | [EveryInc/compound-engineering-plugin](https://github.com/EveryInc/compound-engineering-plugin) | 25.6k | 2025-10-09 | Plugin of 36 skills for coding agents including Claude Code, Codex and Cursor, structured around a loop of brainstorm, plan, build, review and capture. |
 | [muratcankoylan/Agent-Skills-for-Context-Engineering](https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering) | 18.2k | 2025-12-21 | Open collection of agent skills on context engineering and harness engineering: curating context, designing agent operating loops and evaluating agent behavior. |
@@ -369,6 +403,7 @@ Bundles of agent skills and plugins grouped around a theme or vendor, such as sc
 | [jakubkrehel/skills](https://github.com/jakubkrehel/skills) | 8k | 2026-07-10 | Collection of agent skills for building interfaces, covering UI, typography, color, accessibility, layout and product writing, based on the author's design engineering writing. |
 | [CloudAI-X/threejs-skills](https://github.com/CloudAI-X/threejs-skills) | 3.6k | 2026-01-19 | Collection of Three.js skill files that give Claude Code API details, best practices and patterns for creating 3D elements and interactive experiences. |
 | [jtydhr88/screenwriting-skills](https://github.com/jtydhr88/screenwriting-skills) | 1.7k | 2026-09-06 | 26 agent skills for Claude Code and Codex covering screenwriting, television writing and dramaturgy, distilled from 47 craft books and 23 volumes of published scripts. |
+| [morganlinton/BeautifulRust](https://github.com/morganlinton/BeautifulRust) | 1.5k | 2026-10-23 | Three portable Agent Skills for writing, reviewing and porting idiomatic Rust, paired with a Clippy configuration. Bundles guidance from established Rust style and API references for coding agents. |
 | [marckohlbrugge/37signals-skills](https://github.com/marckohlbrugge/37signals-skills) | 726 | 2025-12-17 | Unofficial agent skills and reference guide that teach coding assistants to write Rails the 37signals way, extracted from Fizzy, Campfire and over 100 of DHH's code reviews. |
 | [kitlangton/skills](https://github.com/kitlangton/skills) | 350 | 2026-07-15 | Kit Langton's personal agent skills, mainly a guide to production TypeScript with Effect v4. |
 | [perplexityai/api-platform-developers](https://github.com/perplexityai/api-platform-developers) | 81 | 2026-07-15 | Official Perplexity API Platform skills published as portable Agent Skills for Claude Code, Codex CLI and other clients. The repository doubles as a Claude Code plugin marketplace. |
@@ -390,6 +425,7 @@ Skills whose output is visual or media: diagrams, slides, illustrations, posters
 | [Cocoon-AI/architecture-diagram-generator](https://github.com/Cocoon-AI/architecture-diagram-generator) | 7.5k | 2025-12-22 | Claude skill that generates dark-themed system architecture diagrams from a plain description, output as standalone HTML/SVG files that open in any browser. |
 | [LiamGvchi/gc-minimal-zine-poster](https://github.com/LiamGvchi/gc-minimal-zine-poster) | 7.3k | 2026-07-12 | Codex skill that turns a theme, sentence, object or reference set into a sparse, paper-textured zine-style editorial poster, an image prompt or a reusable visual system. |
 | [YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill](https://github.com/YouMind-OpenLab/nano-banana-pro-prompts-recommend-skill) | 1.9k | 2026-01-21 | Skill for OpenClaw and Claude Code that searches a library of 10,000+ Nano Banana Pro (Gemini) image prompts by use case and can remix them, with sample images. |
+| [Leonxlnx/cinetic](https://github.com/Leonxlnx/cinetic) | 931 | 2026-09-28 | Agent skill for directing cinematic launch films and motion design from code, using Remotion or HyperFrames. Includes concept planning, a technique library, frame-aligned sound through earshot and render-quality checks. |
 | [inkboard/system-atlas](https://github.com/inkboard/system-atlas) | 438 | 2026-08-20 | Agent skill that turns an architecture discussion into an explorable isometric atlas, generated from one data file together with an interactive map and a SYSTEM.md. |
 | [1weiho/cinematic-shot](https://github.com/1weiho/cinematic-shot) | 133 | 2026-10-13 | Agent skill for directing cinematic product-launch films built from hero shots, each a steep oblique close-up of real UI floating on a stage. |
 | [fiberplane/bs](https://github.com/fiberplane/bs) | 5 | 2026-03-16 | Claude Code skill that writes plans as Markdown with directives for callouts, cards, labels, mermaid diagrams and file trees. The Fiberplane desktop app renders them in a consistent design. |
@@ -586,6 +622,7 @@ Generic infrastructure for hosting, proxying and calling tools, including MCP ma
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
+| [superdesigndev/treg](https://github.com/superdesigndev/treg) | 6.7k | 2026-07-15 | Self-hostable agent tool registry and credential proxy with CLI, MCP and workflow skills, including web search and fetch routing. Shares provider access while keeping credentials server-side; its license restricts competing hosted redistribution. |
 | [openclaw/mcporter](https://github.com/openclaw/mcporter) | 5.1k | 2025-11-05 | TypeScript runtime and CLI for discovering and calling MCP servers, exposing them as a typed TypeScript API or packaging them as standalone CLIs. |
 | [UsefulSoftwareCo/executor](https://github.com/UsefulSoftwareCo/executor) | 4.2k | 2026-02-07 | Open-source integration layer where MCP servers, OpenAPI specs and GraphQL APIs are configured once with auth and per-tool policies, then exposed as one catalog to any MCP-compatible agent. |
 | [stacklok/toolhive](https://github.com/stacklok/toolhive) | 2.3k | 2025-03-12 | Platform for running and managing MCP servers in isolated containers, adding access policy, secrets handling and observability. |
@@ -660,8 +697,19 @@ PDF parsers, OCR models and extraction libraries that turn documents into LLM-re
 | [firecrawl/pdf-inspector](https://github.com/firecrawl/pdf-inspector) | 19.7k | 2026-02-06 | Rust library, with npm and Python bindings, that classifies PDFs as text-based or scanned, extracts position-aware text and converts it to Markdown to support routing to OCR. |
 | [datalab-to/chandra](https://github.com/datalab-to/chandra) | 12.5k | 2025-10-08 | OCR model from Datalab that converts images and PDFs into HTML, Markdown or JSON while preserving layout, covering complex tables, forms and handwriting. |
 | [lumina-ai-inc/chunkr](https://github.com/lumina-ai-inc/chunkr) | 4.2k | 2024-08-24 | Document intelligence API that does layout analysis, OCR with bounding boxes and semantic chunking to turn PDFs, Office files and images into structured HTML or Markdown chunks; the open version is AGPL. |
+| [datalab-to/indra](https://github.com/datalab-to/indra) | 1.5k | 2026-10-13 | CPU OCR library and CLI using ONNX Runtime to extract text, layout and reading order from images and PDFs. Code is Apache 2.0; model weights have separate commercial and competitive-use restrictions. |
 | [shift-labs-ai/markit](https://github.com/shift-labs-ai/markit) | 1.3k | 2026-03-25 | Rust CLI and library that converts PDF, Office files, HTML, EPUB, Jupyter, RSS, images, audio and URLs to Markdown, using built-in Rust engines for several formats. |
 | [datalab-to/lift](https://github.com/datalab-to/lift) | 1.2k | 2026-06-03 | 9B vision model that extracts JSON matching a caller-supplied schema from PDFs and images, using schema-constrained decoding to guarantee valid output. |
+
+### Visual & audio production tools
+
+Renderers, animation engines and audio tools that agents can use to create, inspect and refine diagrams, video and sound from code.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [obsidianmd/pele](https://github.com/obsidianmd/pele) | 3.9k | 2026-10-05 | Dependency-free JavaScript library that renders Mermaid diagram text to SVG, with synchronous rendering, responsive browser mounting and CSS-variable themes. Useful for diagrams generated by coding agents and embedded in applications. |
+| [Leonxlnx/earshot](https://github.com/Leonxlnx/earshot) | 3.3k | 2026-10-15 | Local CPU audio toolkit for coding agents, exposed through a CLI, Python API and MCP. Describes and searches sounds, measures audio and video timing, critiques soundtracks, and synthesizes sound effects from code. |
+| [academa-labs/manimgx](https://github.com/academa-labs/manimgx) | 2.4k | 2026-10-05 | Rust and wgpu animation engine for agent-written 2D and 3D scenes, with Manim CE-compatible Python APIs and browser support. Its own code is MIT licensed; native wheels including x264 are GPL-3.0-or-later. |
 
 ## Models, inference & LLM access
 
@@ -729,6 +777,7 @@ Released open model families and research code for language, multimodal and time
 | [OpenBMB/MiniCPM](https://github.com/OpenBMB/MiniCPM) | 11.6k | 2024-01-29 | Repository for OpenBMB's MiniCPM family of small on-device language models, including MiniCPM5-1B and MiniCPM5-2B. |
 | [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | 9.3k | 2026-09-17 | Family of small decision models (yes/no, choice, score) built on Qwen3.5 and Qwen3.8 in the style of Jev. Includes pretrained weights and training code for running or training your own. |
 | [QwenLM/Qwen3.8](https://github.com/QwenLM/Qwen3.8) | 4.3k | 2025-09-11 | Repository for Alibaba's Qwen3.5, Qwen3.6 and Qwen3.8 open large language model series, linking to weights on Hugging Face and ModelScope. |
+| [mistralai/timestral](https://github.com/mistralai/timestral) | 1k | 2026-10-15 | Mistral time-series foundation models and standalone PyTorch inference for multivariate probabilistic forecasting on CPU or GPU, with past and known-future covariates. Code is Apache 2.0; weights use a separate Modified MIT license. |
 | [facebookresearch/tuna-2](https://github.com/facebookresearch/tuna-2) | 759 | 2026-04-22 | Official research code for Tuna-2, a unified multimodal model for understanding and generation that uses pixel embeddings instead of a vision encoder. |
 
 ### Speech, voice & dictation
@@ -758,6 +807,7 @@ Speech models and engines for TTS, speech recognition and VAD, plus voice and di
 | [FireRedTeam/FireRedChat](https://github.com/FireRedTeam/FireRedChat) | 593 | 2025-09-09 | Self-hosted real-time voice agent system with WebUI and Docker services, plus released pVAD, turn-detector, FireRedTTS and FireRedASR components in a cascaded pipeline. |
 | [steipete/sag](https://github.com/steipete/sag) | 583 | 2025-12-07 | Go CLI that works like the macOS say command but speaks with ElevenLabs voices. Streams to speakers by default, can list voices or save audio files. |
 | [freestyle-voice/freestyle](https://github.com/freestyle-voice/freestyle) | 488 | 2026-05-25 | Desktop voice app that dictates into any app via a hotkey, helps with writing, and can check in on a schedule with proactive reminders across connected apps. |
+| [gradium-ai/xn-ptts](https://github.com/gradium-ai/xn-ptts) | 382 | 2026-05-03 | Rust inference runtime for Phonon on-device text-to-speech, with CLI, Python, browser and mobile integrations. Phonon 31m weights are Apache 2.0; 40m variants use CC BY-NC 4.0. |
 | [second-state/qwen3_asr_rs](https://github.com/second-state/qwen3_asr_rs) | 254 | 2026-02-20 | Pure Rust implementation of Qwen3-ASR speech recognition, shipped as a cross-platform CLI and an OpenAI-compatible transcription API server. |
 | [second-state/qwen3_tts_rs](https://github.com/second-state/qwen3_tts_rs) | 234 | 2026-01-25 | Rust implementation of Qwen3 text-to-speech inference. Provides cross-platform CLI tools for speech generation and voice cloning, plus an OpenAI-compatible server. |
 | [nyosegawa/speech.cpp](https://github.com/nyosegawa/speech.cpp) | 179 | 2026-09-29 | Speech engine in C++ on ggml covering TTS, speech recognition and VAD, with Metal, Vulkan and CPU backends. Ships one CLI and shared library behind a C API, plus an OpenAI-compatible server and live transcription. |
@@ -813,6 +863,47 @@ Small libraries and CLIs for using LLMs inside ordinary programs, shells and dev
 | [wobsoriano/oxlint-plugin-jev](https://github.com/wobsoriano/oxlint-plugin-jev) | 91 | 2026-09-19 | Experimental Oxlint plugin that sends matched functions, calls, JSX or files to TypeSafe AI’s Jev classifier and reports findings when plain-English rules exceed a probability cutoff. Batches requests per file and caches answers. |
 | [BoundaryML/feelings](https://github.com/BoundaryML/feelings) | 24 | 2026-09-19 | BAML example project that adds typed judgment methods such as .feels(), .matches() and .fill() to values using TypeSafe AI’s Jev classifier, plus .ask() for text generation. Demonstrates classification, routing and rewrite loops. |
 | [Mechse/saft](https://github.com/Mechse/saft) | 20 | 2026-05-24 | CLI written in Odin that generates Git commit messages with Apple's on-device language model, needing no API keys or cloud access. |
+
+## Formal methods & verification
+
+### System modeling & model checking
+
+Specification languages and model checkers for exploring system behavior and checking invariants before or alongside implementation. Results apply to the modeled system and chosen checking scope.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [tlaplus/tlaplus](https://github.com/tlaplus/tlaplus) | 3.2k | 2016-02-02 | Core TLA+ tools for specifying and checking concurrent and distributed systems, including the TLC model checker and PlusCal translator. Checks a model of a system; the Eclipse Toolbox GUI is unmaintained. |
+| [quint-co/quint](https://github.com/quint-co/quint) | 1.9k | 2021-05-28 | Typed specification language based on the Temporal Logic of Actions, with a simulator, REPL, language server and symbolic model checking through Apalache. Models distributed-system behavior and checks properties of the specification. |
+
+### Theorem proving & program verification
+
+Proof assistants and verifiers that check stated propositions or program properties against explicit specifications, assumptions and bounds.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [leanprover/lean4](https://github.com/leanprover/lean4) | 9.8k | 2018-04-15 | Lean 4 programming language and interactive theorem prover, with tools for writing mathematical proofs and verified functional programs. Proofs establish the stated propositions under their declared assumptions. |
+| [model-checking/kani](https://github.com/model-checking/kani) | 3.6k | 2021-03-26 | Bit-precise Rust model checker using proof harnesses and nondeterministic inputs to check assertions, panics, overflows and undefined behavior. Loop unwinding and input-size bounds determine the scope of bounded proofs. |
+| [dafny-lang/dafny](https://github.com/dafny-lang/dafny) | 3.6k | 2016-04-16 | Verification-oriented programming language with preconditions, postconditions, loop invariants and mathematical proofs. Checks that code meets user-written specifications and compiles to C#, Go, Python, Java or JavaScript. |
+| [verus-lang/verus](https://github.com/verus-lang/verus) | 3.5k | 2021-10-19 | Solver-backed verifier for a subset of Rust that checks executable code against specifications and proof annotations without adding runtime checks. Supports reasoning about unsafe and concurrent code; actively developed with incomplete language coverage. |
+
+## Languages & compilers
+
+### Programming languages
+
+Language designs relevant to agent-authored software, including memory management, dependent types, parallel computation and executable specifications.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [bendlang/bend](https://github.com/bendlang/bend) | 24.6k | 2023-08-29 | Bend 2, a young dependently typed language with parallel CPU/GPU compilation and compiler-checked proofs of explicitly stated laws. Includes LAWS.bend and PROOF.bend workflows for agent-written code; unsafe features and axioms limit the scope of guarantees. |
+| [aardappel/goose](https://github.com/aardappel/goose) | 2.6k | 2026-08-30 | Experimental systems language designed around compiler-managed data stacks, scope-based reclamation and inferred reference lifetimes, without a heap allocator or GC. Compiles to C; its compiler was implemented largely with AI from a human language design. |
+
+### Native & alternative compilers
+
+Compilers that bring existing languages to native binaries and alternative runtimes, with explicit compatibility limits and diagnostics for unsupported code.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [vercel-labs/scriptc](https://github.com/vercel-labs/scriptc) | 6.4k | 2026-07-22 | Experimental compiler that turns supported TypeScript and JavaScript into native executables and WebAssembly using TypeScript type information. Covers a subset of JS, TS and Node APIs, with coverage reports and build-time diagnostics for unsupported constructs. |
 
 ## Notable GitHub people & organizations
 

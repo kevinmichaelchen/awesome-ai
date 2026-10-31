@@ -4,7 +4,7 @@ Agent frameworks & assistants	agents.assistants	Personal & team assistant agents
 Agent frameworks & assistants	agents.multi	Multi-agent collaboration & simulation	Platforms, protocols and simulations where many agents or agents and humans collaborate, share work or interact socially.
 Agent frameworks & assistants	agents.domain	Domain & research agents	Agents specialized for a field such as financial research, deep research reports, data science and automated R&D.
 Agent frameworks & assistants	agents.evals	Agent evals, benchmarks & training	Benchmarks, trajectory analysis, user simulators and training or evolution frameworks for measuring and improving agents.
-Coding agents	coding.agents	Coding agent CLIs & harness cores	Terminal coding agents and harness cores that read and edit code and run commands, including forks and agents tuned for open or local models.
+Coding agents	coding.agents	Coding agent CLIs & harness cores	Terminal and editor coding-agent cores that read and edit code and run commands, including forks and agents tuned for open or local models.
 Coding agents	coding.ade	Agent IDEs & desktop workbenches (ADEs)	Desktop, native and web workbenches where a human drives one or many coding agents with terminals, diffs and worktrees in a single window.
 Coding agents	coding.orchestration	Parallel agent orchestration	CLI, TUI and tmux layers that spawn, multiplex and coordinate several coding agents, with worktree isolation and inter-agent messaging.
 Coding agents	coding.remote	Remote & mobile agent clients	Clients for controlling coding agents from a phone, browser or chat app such as Discord or Telegram.
@@ -12,6 +12,7 @@ Coding agents	coding.loops	Autonomous loops & background agents	Systems that run
 Coding agents	coding.extensions	Harness plugins, hooks & config	Plugins, hooks, statuslines, notifications, personas and config tools that extend or configure an existing coding-agent harness.
 Coding agents	coding.planning	Agent task tracking & planning	Issue trackers, task graphs and plan stores designed for agents and humans to plan and track coding work.
 Coding agents	coding.sessions	Agent sessions, usage & observability	Tools that capture, replay, search or measure coding-agent sessions, covering token and cost usage, transcripts and links between prompts and commits.
+Coding agents	coding.protocols	Harness protocols & instruction formats	Shared protocols and repository instruction conventions that connect coding agents to editors and make project context portable across harnesses.
 Agent skills	skills.collections	Skill collections & packs	Bundles of agent skills and plugins grouped around a theme or vendor, such as science, UI design, screenwriting, Rails or a particular API.
 Agent skills	skills.visual	Visual & media output skills	Skills whose output is visual or media: diagrams, slides, illustrations, posters, SVGs and launch videos.
 Agent skills	skills.workflow	Behavior, writing & workflow skills	Skills that shape agent behavior, writing style or working process, such as planning, spec writing, minimal code and plain language.
@@ -29,6 +30,7 @@ Agent tools & integrations	tools.connectors	Service connectors (MCP servers, API
 Agent tools & integrations	tools.browser	Browser & computer-use automation	Browser, desktop and terminal-UI automation that lets agents drive real applications.
 Agent tools & integrations	tools.scraping	Web crawling & scraping	Crawlers, scrapers and HTML-to-Markdown converters that turn web content into clean data for LLMs.
 Agent tools & integrations	tools.docparse	Document parsing, OCR & extraction	PDF parsers, OCR models and extraction libraries that turn documents into LLM-ready text or structured data.
+Agent tools & integrations	tools.media	Visual & audio production tools	Renderers, animation engines and audio tools that agents can use to create, inspect and refine diagrams, video and sound from code.
 Models, inference & LLM access	ml.inference	LLM inference engines & serving	Engines and serving layers for running LLMs fast, from datacenter GPU servers to Apple Silicon, browsers and consumer hardware.
 Models, inference & LLM access	ml.local	Local model runners & desktop AI	Launchers, runners and managers for picking, swapping and serving models on your own machines.
 Models, inference & LLM access	ml.frameworks	ML frameworks, training & fine-tuning	Array and ML frameworks, language bindings, fine-tuning libraries, training research and model conversion collections.
@@ -37,3 +39,7 @@ Models, inference & LLM access	ml.speech	Speech, voice & dictation	Speech models
 Models, inference & LLM access	ml.vision	Vision, video & image models	Models and tools for computer vision, depth, pose, motion capture, and image and video generation.
 Models, inference & LLM access	ml.gateways	LLM gateways, routers & model catalogs	Gateways, routers and proxies that unify LLM providers and subscriptions, plus model catalogs, pricing data and API specs.
 Models, inference & LLM access	ml.llmdev	LLM app utilities & typed AI functions	Small libraries and CLIs for using LLMs inside ordinary programs, shells and developer workflows.
+Formal methods & verification	formal.modeling	System modeling & model checking	Specification languages and model checkers for exploring system behavior and checking invariants before or alongside implementation. Results apply to the modeled system and chosen checking scope.
+Formal methods & verification	formal.verification	Theorem proving & program verification	Proof assistants and verifiers that check stated propositions or program properties against explicit specifications, assumptions and bounds.
+Languages & compilers	languages.design	Programming languages	Language designs relevant to agent-authored software, including memory management, dependent types, parallel computation and executable specifications.
+Languages & compilers	languages.compilers	Native & alternative compilers	Compilers that bring existing languages to native binaries and alternative runtimes, with explicit compatibility limits and diagnostics for unsupported code.

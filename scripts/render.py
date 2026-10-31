@@ -91,8 +91,8 @@ if review:
 
 head = [
     "# Awesome AI", "",
-    f"A personal, categorized index of {len(projects)} AI projects I've starred: agent frameworks, coding agents, "
-    "skills, sandboxes, memory and retrieval, tools, and models. Each section is sorted by GitHub stars.", "",
+    f"A personal, categorized index of {len(projects)} AI projects: agent frameworks, coding agents, "
+    "skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.", "",
     f"_Last generated {date.today().isoformat()}. Star counts are a snapshot._", "",
     "## Contents", "", *toc, "",
 ]
