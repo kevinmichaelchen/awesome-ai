@@ -515,3 +515,73 @@ model-checking/kani	formal.verification	3617	2021-03-26	false	Bit-precise Rust m
 aardappel/goose	languages.design	2567	2026-08-30	false	Experimental systems language designed around compiler-managed data stacks, scope-based reclamation and inferred reference lifetimes, without a heap allocator or GC. Compiles to C; its compiler was implemented largely with AI from a human language design.	
 vercel-labs/scriptc	languages.compilers	6441	2026-07-22	false	Experimental compiler that turns supported TypeScript and JavaScript into native executables and WebAssembly using TypeScript type information. Covers a subset of JS, TS and Node APIs, with coverage reports and build-time diagnostics for unsupported constructs.	
 bendlang/bend	languages.design	24571	2023-08-29	false	Bend 2, a young dependently typed language with parallel CPU/GPU compilation and compiler-checked proofs of explicitly stated laws. Includes LAWS.bend and PROOF.bend workflows for agent-written code; unsafe features and axioms limit the scope of guarantees.	
+gholtzap/lintapple	coding.extensions	595	2026-10-07	false	Tool for checking AI-generated user interfaces against UI quality rules.
+Generated-Computers/Locals	ml.local	647	2026-10-12	false	Local model server for Apple silicon Macs, designed for concurrent agent workloads and compatible with OpenAI, Anthropic and Ollama clients.
+1weiho/skills	skills.collections	240	2026-10-13	false	Collection of Yiwei’s agent skills.
+pgrundev/pgrun-cli	tools.connectors	15	2026-09-03	false	CLI and MCP server for creating, using and deleting disposable PGRun PostgreSQL branches for coding agents.
+pgrundev/pgbot	tools.connectors	1491	2026-08-11	false	PostgreSQL intelligence tool for AI agents.
+morluto/rea	agents.domain	449584	2026-04-14	false	Agent-based reverse engineering tool for examining application behavior and native binaries.
+HelixDB/helix-foundry	context.rag	2104	2026-10-07	false	Connects company data and uses an agent to draft an ontology and load a graph into HelixDB for exploration and questions. Available hosted or self-hosted.
+kitlangton/2password	tools.connectors	326	2026-07-11	false	CLI and agent skill that uses 1Password to find, use and save credentials without exposing their values to the agent.
+devswha/ovis	coding.remote	2012	2026-09-17	false	Open-source browser and phone client for Herdr, with chat, live terminals, remote PCs over SSH and push alerts.
+px0-ai/px0	coding.ade	1949	2026-06-24	false	Browser-based review workbench and IDE for AI-generated code, with Git and GitHub integrations, code search, fixes and handoff to local coding agents.
+sheprd-labs/sheprd	coding.ade	2261	2026-09-20	false	Native cross-platform Herdr client for viewing terminal sessions, workspaces, Git worktrees and agent activity through a local daemon.
+joelhooks/rat-stack	agents.frameworks	160	2026-08-20	false	Agentic TypeScript scaffold combining Effect, XState, Alchemy and varlock, with checks intended to discourage shortcuts.
+doeixd/jev-pref	coding.extensions	15	2026-09-17	false	AI linter that applies preferences from AGENTS.md using the Jev classifier.
+devagrawal09/jev-review	coding.extensions	704	2026-09-16	false	Staged code-review workflow and local dashboard built with the TypeSafe Jev classifier.
+Ataraxy-Labs/sem	context.codeintel	3451	2026-02-05	false	Semantic version control => entity-level diffs, blame, and impact analysis on top of git. 28 languages via tree-sitter. Built for coding agents.
+andrefigueira/.context	context.codeintel	254	2025-09-08	false	A Git-native, AI-optimized documentation system that turns your repo into a living knowledge base.
+heetdalsania/quire	context.codeintel	13	2026-08-29	false	Local-first Markdown collaboration for humans and AI agents, with live attribution, suggestions, and Git-friendly plain files.
+bholmesdev/hubble.md	context.codeintel	1525	2026-02-17	false	The best notepad for you and your agents
+inkeep/open-knowledge	context.codeintel	4830	2026-06-03	false	Beautiful, AI-native markdown IDE and LLM wiki
+docmd-io/docmd	context.codeintel	2560	2025-05-08	false	Documentation compiler for humans and machines. One Markdown source to website, search, AI context, and knowledge formats together.
+timescale/pgai	context.rag	5794	2024-05-16	true	A suite of tools to develop RAG, semantic search, and other AI applications more easily with PostgreSQL
+cocoindex-io/cocoindex	context.rag	11873	2025-03-03	false	Incremental engine for long horizon agents 🌟 Star if you like it!
+FalkorDB/FalkorDB	context.rag	10493	2023-07-20	false	A super fast Graph Database uses GraphBLAS under the hood for its sparse adjacency matrix graph representation. Our goal is to provide the best Knowledge Graph for LLM (GraphRAG).
+DecapodLabs/decapod	coding.planning	239	2026-02-11	false	Metacognition for AI agents. A repo-native governance kernel for bounded, convergent, proof-backed work.
+backnotprop/plannotator	coding.planning	9997	2025-12-28	false	The workspace to stay in the loop and on top of agents - shape, decide, plan, annotate, review code, share with team, and send all feedback to agents with one click.
+max-sixty/worktrunk	coding.orchestration	12378	2025-10-17	false	Worktrunk is a CLI for Git worktree management, designed for parallel AI agent workflows
+alibaba/open-code-review	coding.review	49786	2026-05-18	false	Secure, fast, efficient, battle-tested at Alibaba's scale. Hybrid architecture code review tool: deterministic pipelines + LLM Agent, precise line-level comments, built-in multi-language ruleset (NPE, thread-safety, XSS, SQL injection), OpenAI & Anthropic compatible.
+vercel-labs/openreview	coding.review	1706	2026-03-02	false	An open-source, self-hosted AI code review bot powered by Vercel.
+modem-dev/hunk	coding.review	9810	2026-03-17	false	Review-first terminal diff viewer for agentic coders
+alexanderatallah/redline	coding.review	92	2026-03-22	false	Continuous review for agents
+hyhmrright/brooks-lint	coding.review	1572	2026-03-26	false	Portable AI code quality reviews for Codex, Cursor, Copilot and other coding agents: six Agent Skills for architecture, technical debt, tests and remediation.
+Ataraxy-Labs/weave	coding.review	1355	2026-02-06	false	Entity-level git merge driver. Resolves false conflicts git invents when independent agents edit the same file. ~95% reduction vs. line-based merge.
+NVIDIA/SkillSpector	coding.security	25197	2026-03-21	false	Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.
+botiverse/agent-vault	coding.security	440	2026-02-19	true	Keep your secrets hidden from AI agents.
+runta-dev/clawshell	coding.security	352	2026-02-13	false	The local runtime control layer for OpenClaw/Hermes-agent, PII & sensitive credentials protection.
+elliot35/deterministic-agent-control-protocol	coding.security	83	2026-02-07	false	Governance gateway for AI agents — bounded, auditable, session-aware control with MCP proxy, shell proxy & HTTP API. Works with Cursor, Claude Code, Codex, and any MCP-compatible agent.
+joelhooks/agent-secrets	coding.security	115	2026-02-02	false	🛡️ Portable credential management for AI agents — Age encryption, session leases, killswitch
+dmno-dev/varlock	coding.security	4944	2025-04-11	false	AI-safe .env files: Schemas for agents, Secrets for humans.
+cisco-ai-defense/skill-scanner	coding.security	2715	2026-01-29	false	Security Scanner for Agent Skills
+eqtylab/cupcake	coding.security	302	2025-07-11	false	A native policy enforcement layer for AI coding agents. Built on OPA/Rego.
+prompt-security/clawsec	coding.security	1135	2026-02-05	false	A complete security skill suite for OpenClaw, Hermes, PicoClaw and NanoClaw agents (and variants). Protect your SOUL.md (etc') with drift detection, live security recommendations, automated audits, and skill integrity verification. All from one installable suite.
+sheeki03/tirith	coding.security	2782	2026-02-02	false	Terminal security for developers and AI agents. Intercepts homograph URLs, pipe-to-shell, ANSI injection, obfuscated payloads, data exfiltration, and malicious AI skills/configs before they execute.
+ZeroLeaks/zeroleaks	coding.security	745	2026-01-20	false	AI Security Scanner - Test your AI systems for prompt injection and extraction vulnerabilities
+Augani/dory	sandbox.vms	1638	2026-06-19	false	Dory is the complete local development system for Apple Silicon: Docker, Compose, Kubernetes, virtual machines, and policy-bound agent sandboxes.
+opengeos/geoai	agents.domain	3464	2023-08-11	false	GeoAI: Artificial Intelligence for Geospatial Data
+uav4geo/GeoDeep	agents.domain	529	2025-01-08	false	Free and open source library for AI object detection and semantic segmentation in geospatial rasters. 🚀
+ucbepic/docetl	agents.domain	4222	2024-07-09	false	A system for agentic LLM-powered data processing and ETL
+cloudflare/agentic-inbox	agents.assistants	8643	2026-04-10	false	A self-hosted email client with an AI agent, running entirely on Cloudflare Workers
+yazinsai/OpenOats	agents.assistants	2640	2026-02-28	false	A meeting note-taker that talks back.
+fastrepl/anarlog	agents.assistants	9850	2024-12-09	false	Open source Granola AI Alternative
+rivet-dev/rivet	agents.frameworks	6827	2023-06-16	false	The orchestrator for agentic workloads. A fast, high-density and scalable orchestrator for every workload an agent needs.
+alibaba/zvec	context.search	16225	2025-12-05	false	A lightweight, lightning-fast, in-process vector database
+pgvector/pgvector	context.search	23645	2021-04-20	false	Open-source vector similarity search for Postgres
+giuliosmall/pg_typesafe	ml.llmdev	58	2026-09-17	false	Pre-alpha PostgreSQL extension for TypeSafe AI (Jev) categorical classification
+facebookresearch/content-seal	ml.vision	243	2025-12-18	false	Content Seal is a state-of-the-art framework for invisible, robust watermarking across all modalities audio, image, video, and text. This suite spans the entire generative lifecycle, from training data and inference to generated media.
+ai-infra-curriculum/ai-infra-engineer-learning	ml.reference	1875	2025-10-25	false	AI Infrastructure Engineer Learning Track - Production ML infrastructure curriculum (2-4 years experience)
+nibzard/awesome-agentic-patterns	ml.reference	5073	2025-05-31	false	A curated catalogue of awesome agentic AI patterns
+ygwyg/agent-experience	ml.reference	118	2026-03-04	false	A visual reference to the patterns, surfaces, and infrastructure behind AI agents.
+kevinmichaelchen/deep-planning	ml.reference	1	2026-02-22	true	📚 Curated collection of papers related to DeepPlanning: Benchmarking Long-Horizon Agentic Planning with Verifiable Constraints (2026)
+fatwang2/awesome-jev	ml.reference	235	2026-09-18	false	A source-backed Jev project directory with a reusable Jev-only GitHub review workflow.
+humanlayer/12-factor-agents	ml.reference	27088	2025-03-30	false	What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?
+nexu-io/open-design	coding.ade	107013	2026-04-28	false	The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.
+durable-streams/durable-streams	context.memory	1727	2025-12-04	false	The data primitive for the agent loop.
+open-slide/open-slide	skills.visual	9734	2026-04-26	false	A slide framework built for agents.
+microsoft/flint-chart	tools.media	4567	2026-05-13	false	🪄 Flint is a visualization language that lets AI agents reliably create expressive, good-looking charts from simple, human-editable chart specs.
+bnomei/nereid	tools.media	68	2026-02-06	false	Create and explore Mermaid diagrams in collaboration with AI agents (TUI + MCP Server)
+modem-dev/sideshow	tools.media	635	2026-06-11	false	The missing visual surface companion for agents - generate UI mockups, data visualizations, code explainers, and more
+google-labs-code/stitch-sdk	tools.media	1849	2025-12-03	false	Generate UI screens from text prompts and extract their HTML and screenshots programmatically.
+JordanGunn/gdal-mcp	tools.connectors	86	2025-09-05	false	Model Context Protocol server that packages GDAL-style geospatial workflows through Python-native libraries (Rasterio, GeoPandas, PyProj, etc.) to give AI agents catalog discovery, metadata intelligence, and raster/vector processing with built-in reasoning guidance and reference resources.
+cloudflare/mcp	tools.connectors	1080	2026-01-29	false	MCP server for the Cloudflare API

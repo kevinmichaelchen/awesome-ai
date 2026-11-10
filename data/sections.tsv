@@ -12,6 +12,8 @@ Coding agents	coding.loops	Autonomous loops & background agents	Systems that run
 Coding agents	coding.extensions	Harness plugins, hooks & config	Plugins, hooks, statuslines, notifications, personas and config tools that extend or configure an existing coding-agent harness.
 Coding agents	coding.planning	Agent task tracking & planning	Issue trackers, task graphs and plan stores designed for agents and humans to plan and track coding work.
 Coding agents	coding.sessions	Agent sessions, usage & observability	Tools that capture, replay, search or measure coding-agent sessions, covering token and cost usage, transcripts and links between prompts and commits.
+Coding agents	coding.review	Agent code review & Git tools	Tools for reviewing agent-written changes and managing Git workflows used by coding agents.
+Coding agents	coding.security	Agent security & guardrails	Tools for securing agent skills, credentials and execution, and testing AI systems for vulnerabilities.
 Coding agents	coding.protocols	Harness protocols & instruction formats	Shared protocols and repository instruction conventions that connect coding agents to editors and make project context portable across harnesses.
 Agent skills	skills.collections	Skill collections & packs	Bundles of agent skills and plugins grouped around a theme or vendor, such as science, UI design, screenwriting, Rails or a particular API.
 Agent skills	skills.visual	Visual & media output skills	Skills whose output is visual or media: diagrams, slides, illustrations, posters, SVGs and launch videos.
@@ -39,6 +41,7 @@ Models, inference & LLM access	ml.speech	Speech, voice & dictation	Speech models
 Models, inference & LLM access	ml.vision	Vision, video & image models	Models and tools for computer vision, depth, pose, motion capture, and image and video generation.
 Models, inference & LLM access	ml.gateways	LLM gateways, routers & model catalogs	Gateways, routers and proxies that unify LLM providers and subscriptions, plus model catalogs, pricing data and API specs.
 Models, inference & LLM access	ml.llmdev	LLM app utilities & typed AI functions	Small libraries and CLIs for using LLMs inside ordinary programs, shells and developer workflows.
+Models, inference & LLM access	ml.reference	AI learning & reference	Curated guides, patterns and learning resources for AI systems and agents.
 Formal methods & verification	formal.modeling	System modeling & model checking	Specification languages and model checkers for exploring system behavior and checking invariants before or alongside implementation. Results apply to the modeled system and chosen checking scope.
 Formal methods & verification	formal.verification	Theorem proving & program verification	Proof assistants and verifiers that check stated propositions or program properties against explicit specifications, assumptions and bounds.
 Languages & compilers	languages.design	Programming languages	Language designs relevant to agent-authored software, including memory management, dependent types, parallel computation and executable specifications.
