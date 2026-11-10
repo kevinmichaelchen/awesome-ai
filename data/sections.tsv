@@ -38,7 +38,7 @@ Models, inference & LLM access	ml.inference	LLM inference engines & serving	Engi
 Models, inference & LLM access	ml.local	Local model runners & desktop AI	Launchers, runners and managers for picking, swapping and serving models on your own machines.
 Models, inference & LLM access	ml.frameworks	ML frameworks, training & fine-tuning	Array and ML frameworks, language bindings, fine-tuning libraries, training research and model conversion collections.
 Models, inference & LLM access	ml.models	Open model releases & research code	Released open model families and research code for language, multimodal and time-series tasks.
-Models, inference & LLM access	ml.speech	Speech, voice & dictation	Speech models and engines for TTS, speech recognition and VAD, plus voice and dictation apps built on them.
+Models, inference & LLM access	ml.speech	Speech, voice & dictation	Speech models and engines for TTS, speech recognition, turn detection and full-duplex dialogue, plus voice agent frameworks and dictation apps built on them.
 Models, inference & LLM access	ml.vision	Vision, video & image models	Models and tools for computer vision, depth, pose, motion capture, and image and video generation.
 Models, inference & LLM access	ml.gateways	LLM gateways, routers & model catalogs	Gateways, routers and proxies that unify LLM providers and subscriptions, plus model catalogs, pricing data and API specs.
 Models, inference & LLM access	ml.llmdev	LLM app utilities & typed AI functions	Small libraries and CLIs for using LLMs inside ordinary programs, shells and developer workflows.

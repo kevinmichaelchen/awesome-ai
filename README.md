@@ -1,6 +1,6 @@
 # Awesome AI
 
-A personal, categorized index of 590 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
+A personal, categorized index of 610 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
 
 _Last generated 2026-11-10. Star counts are a snapshot._
 
@@ -47,12 +47,12 @@ _Last generated 2026-11-10. Star counts are a snapshot._
   - [Document parsing, OCR & extraction](#document-parsing-ocr--extraction) (8)
   - [Visual & audio production tools](#visual--audio-production-tools) (7)
   - [Native UI frameworks for agent apps](#native-ui-frameworks-for-agent-apps) (1)
-- [Models, inference & LLM access](#models-inference--llm-access) (104)
-  - [LLM inference engines & serving](#llm-inference-engines--serving) (16)
-  - [Local model runners & desktop AI](#local-model-runners--desktop-ai) (9)
+- [Models, inference & LLM access](#models-inference--llm-access) (124)
+  - [LLM inference engines & serving](#llm-inference-engines--serving) (17)
+  - [Local model runners & desktop AI](#local-model-runners--desktop-ai) (10)
   - [ML frameworks, training & fine-tuning](#ml-frameworks-training--fine-tuning) (9)
   - [Open model releases & research code](#open-model-releases--research-code) (6)
-  - [Speech, voice & dictation](#speech-voice--dictation) (27)
+  - [Speech, voice & dictation](#speech-voice--dictation) (45)
   - [Vision, video & image models](#vision-video--image-models) (9)
   - [LLM gateways, routers & model catalogs](#llm-gateways-routers--model-catalogs) (15)
   - [LLM app utilities & typed AI functions](#llm-app-utilities--typed-ai-functions) (7)
@@ -815,6 +815,7 @@ Engines and serving layers for running LLMs fast, from datacenter GPU servers to
 | [sgl-project/sglang](https://github.com/sgl-project/sglang) | 37.2k | 2024-01-08 | Open-source serving framework for large language, vision-language and diffusion models, optimized for agentic workloads, large-scale serving and RL rollouts. |
 | [antirez/ds4](https://github.com/antirez/ds4) | 23.9k | 2026-05-06 | Small native inference engine optimized for DeepSeek V4 Flash and a few other large models on consumer hardware, with Metal, CUDA and ROCm backends. |
 | [mlc-ai/web-llm](https://github.com/mlc-ai/web-llm) | 19.3k | 2023-04-13 | In-browser LLM inference engine that runs models locally on WebGPU, exposing an OpenAI-style API from the MLC LLM project. |
+| [huggingface/transformers.js](https://github.com/huggingface/transformers.js) | 16.4k | 2023-02-13 | JavaScript library that runs Hugging Face Transformers models directly in the browser, with no server. |
 | [LMCache/LMCache](https://github.com/LMCache/LMCache) | 12.1k | 2024-05-28 | KV-cache management layer for LLM serving that integrates with vLLM, reusing cached key/value state to reduce latency and compute in scalable inference. |
 | [magnitudedev/magnitude](https://github.com/magnitudedev/magnitude) | 7k | 2026-06-12 | Rust inference engine that autotunes its kernels for your hardware to run each model as fast as possible. Runs on Apple Silicon, NVIDIA, AMD or CPU and connects to coding agents. |
 | [0xSojalSec/airllm](https://github.com/0xSojalSec/airllm) | 3.1k | 2025-09-26 | Fork of AirLLM, a Python library that runs very large LLMs on small GPUs by loading layers from disk per step. Also includes QLoRA and DPO fine-tuning tools. |
@@ -838,6 +839,7 @@ Launchers, runners and managers for picking, swapping and serving models on your
 | [pinokiocomputer/pinokio](https://github.com/pinokiocomputer/pinokio) | 8.3k | 2023-07-09 | Desktop launcher that installs and runs open-source AI projects through scripted one-click workflows. Works like a terminal app with a GUI, where scripts can run arbitrary commands. |
 | [mostlygeek/llama-swap](https://github.com/mostlygeek/llama-swap) | 6k | 2024-10-04 | Zero-dependency Go proxy that hot-swaps between local models on demand in front of any OpenAI- or Anthropic-compatible server such as llama.cpp or vLLM. |
 | [containers/ramalama](https://github.com/containers/ramalama) | 3.1k | 2024-07-24 | CLI that pulls and serves local AI models from any source inside OCI containers, applying familiar container workflows to local and production inference. |
+| [software-mansion/react-native-executorch](https://github.com/software-mansion/react-native-executorch) | 1.8k | 2024-10-16 | On-device AI inference library for React Native built on Meta's ExecuTorch runtime, with pre-exported models for vision, language, text-to-speech and transcription, and support for custom .pte models. |
 | [Blaizzy/nativ](https://github.com/Blaizzy/nativ) | 1.5k | 2026-07-20 | Native macOS app for Apple silicon that bundles an mlx-vlm server, finds MLX models in your Hugging Face cache, and lets you chat with, serve and monitor them. |
 | [Generated-Computers/Locals](https://github.com/Generated-Computers/Locals) | 647 | 2026-10-12 | Local model server for Apple silicon Macs, designed for concurrent agent workloads and compatible with OpenAI, Anthropic and Ollama clients. |
 | [Chen-zexi/vllm-cli](https://github.com/Chen-zexi/vllm-cli) | 506 | 2025-08-14 | Command-line tool for serving LLMs with vLLM, with an interactive interface, saved configuration profiles and GPU monitoring. |
@@ -873,37 +875,55 @@ Released open model families and research code for language, multimodal and time
 
 ### Speech, voice & dictation
 
-Speech models and engines for TTS, speech recognition and VAD, plus voice and dictation apps built on them.
+Speech models and engines for TTS, speech recognition, turn detection and full-duplex dialogue, plus voice agent frameworks and dictation apps built on them.
 
 | Project | Stars | Created | Description |
 |---|--:|---|---|
 | [jamiepine/voicebox](https://github.com/jamiepine/voicebox) | 57.8k | 2026-01-25 | Local, open-source voice studio for cloning voices, generating speech and dictating into any app, with an API for giving agents voices you own. |
 | [OpenBMB/VoxCPM](https://github.com/OpenBMB/VoxCPM) | 39.5k | 2025-09-16 | Tokenizer-free multilingual text-to-speech model (VoxCPM2) from OpenBMB that supports voice design and voice cloning. |
 | [cjpais/Handy](https://github.com/cjpais/Handy) | 34k | 2025-02-13 | Free, open-source, offline cross-platform desktop speech-to-text app: press a shortcut, speak, and the transcription is typed into any text field. Written in Rust. |
+| [fishaudio/fish-speech](https://github.com/fishaudio/fish-speech) | 33.7k | 2023-10-10 | Fish Audio's open text-to-speech codebase and model weights. Released under the Fish Audio Community License, with the S2-Pro weights under a separate research licence. |
 | [resemble-ai/chatterbox](https://github.com/resemble-ai/chatterbox) | 27k | 2025-04-23 | Family of open-source text-to-speech models from Resemble AI, including a multilingual variant, with hosted demos and local install. |
+| [pipecat-ai/pipecat](https://github.com/pipecat-ai/pipecat) | 17.2k | 2023-12-27 | Open-source Python framework for voice agents, multimodal apps and real-time AI, maintained by Daily and the community. |
 | [KittenML/KittenTTS](https://github.com/KittenML/KittenTTS) | 16.1k | 2025-08-05 | Open-source text-to-speech library with CPU-friendly models. Its flagship KittenTTS 2 is a 1.7B-parameter 1-bit speech language model with in-context voice cloning and expression control. |
+| [livekit/agents](https://github.com/livekit/agents) | 15.2k | 2023-10-19 | LiveKit's open-source framework for building real-time voice AI agents on its WebRTC infrastructure. |
 | [supertone-oss-archive/supertonic](https://github.com/supertone-oss-archive/supertonic) (archived) | 13.8k | 2025-11-18 | Archived on-device multilingual text-to-speech project that runs natively through ONNX. Development and support have ended; code is kept for reference. |
 | [altic-dev/FluidVoice](https://github.com/altic-dev/FluidVoice) | 12.3k | 2025-09-21 | Open-source macOS voice-to-text dictation app that transcribes on-device and applies AI enhancement to the text. Installable via Homebrew, positioned as a local alternative to Wispr Flow. |
+| [NVIDIA/personaplex](https://github.com/NVIDIA/personaplex) | 12.1k | 2026-01-05 | NVIDIA's real-time, full-duplex speech-to-speech conversational model with persona control through text role prompts and voice conditioning. Based on the Moshi architecture and weights. |
 | [kyutai-labs/moshi](https://github.com/kyutai-labs/moshi) | 11.3k | 2024-08-07 | Kyutai's speech-text foundation model and framework for real-time, full-duplex spoken dialogue, built on the Mimi streaming neural audio codec. |
 | [kyutai-labs/pocket-tts](https://github.com/kyutai-labs/pocket-tts) | 9.9k | 2026-01-07 | Lightweight text-to-speech library from Kyutai designed to run on CPUs, installed with pip and called as a Python function. Requires PyTorch 2.5+. |
 | [hexgrad/kokoro](https://github.com/hexgrad/kokoro) | 9.4k | 2025-01-10 | Python inference library for Kokoro-82M, an open-weight 82-million-parameter text-to-speech model, installable with pip. |
 | [santinic/audiblez](https://github.com/santinic/audiblez) | 8.8k | 2025-01-14 | Python tool that converts EPUB e-books into .m4b audiobooks using Kokoro TTS, with a graphical interface, CUDA support and multiple languages. |
 | [Blaizzy/mlx-audio](https://github.com/Blaizzy/mlx-audio) | 8.1k | 2024-11-27 | Library for text-to-speech, speech-to-text and speech-to-speech built on Apple's MLX framework for Apple Silicon. |
 | [argmaxinc/argmax-oss-swift](https://github.com/argmaxinc/argmax-oss-swift) | 6.4k | 2024-01-26 | Open-source Swift SDK for on-device speech AI on Apple Silicon, covering speech recognition and speaker diarization. Home of WhisperKit with Core ML models. |
+| [anomalyco/hex](https://github.com/anomalyco/hex) | 6.2k | 2026-07-17 | Local voice dictation app for Mac, Windows and Linux from the OpenCode team: hold a shortcut, speak, and it transcribes on-device and pastes into the current app. Successor to kitlangton/Hex. |
+| [OpenMOSS/MOSS-TTS-Nano](https://github.com/OpenMOSS/MOSS-TTS-Nano) | 4.7k | 2026-04-10 | 100M-parameter multilingual text-to-speech model from OpenMOSS for real-time CPU inference, with voice cloning and 48 kHz stereo output. |
 | [tmoroney/auto-subs](https://github.com/tmoroney/auto-subs) | 4.4k | 2023-03-15 | Local-first subtitle generator that turns audio or video into timestamped subtitles with selectable AI models. Runs standalone or connects to DaVinci Resolve, Premiere Pro and After Effects. |
+| [OpenMOSS/MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS) | 4.3k | 2026-02-07 | OpenMOSS's open model family for long-form speech, dialogue synthesis, voice design, sound effects and real-time streaming text-to-speech. |
 | [MisoLabsAI/MisoTTS](https://github.com/MisoLabsAI/MisoTTS) | 3.2k | 2026-05-20 | Open 8-billion-parameter text-to-speech model aimed at emotive, expressive speech. Includes local quickstart instructions via uv and a hosted demo. |
+| [AutoArk/GPA](https://github.com/AutoArk/GPA) | 3.1k | 2025-12-16 | General Purpose Audio: one small model that does speech recognition, text-to-speech and voice conversion. GPA v1.5 also ships an ONNX runtime with CLI tools, a FastAPI service and a browser UI. |
+| [kyutai-labs/delayed-streams-modeling](https://github.com/kyutai-labs/delayed-streams-modeling) | 3.1k | 2025-06-16 | Instructions and examples for running Kyutai's streaming speech-to-text and text-to-speech models, built on the Delayed Streams Modeling technique that generalizes the approach of Moshi and Hibiki. |
 | [kitlangton/Hex](https://github.com/kitlangton/Hex) (archived) | 2.9k | 2025-01-27 | Archived macOS hold-to-talk transcription app that pastes the transcribed text where you are typing. Development moved to anomalyco/hex; this repo preserves the legacy Swift app. |
+| [Edge0-AI/Audio8_TTS](https://github.com/Edge0-AI/Audio8_TTS) | 2.4k | 2026-07-29 | Compact text-to-speech models from Edge0 for zero-shot voice cloning, in 0.6B and 0.1B families. The 0.6B Realistic release supports 23 languages. |
+| [OpenMOSS/MOSS-Transcribe-Diarize](https://github.com/OpenMOSS/MOSS-Transcribe-Diarize) | 2.3k | 2026-05-13 | 0.9B model from OpenMOSS for long-form transcription in 50+ languages with speaker diarization, timestamps and acoustic event awareness. |
+| [pipecat-ai/smart-turn](https://github.com/pipecat-ai/smart-turn) | 1.7k | 2025-03-05 | Open native-audio turn detection model that decides when a voice agent should respond, using the speech itself and not only voice activity detection. Supports 23 languages and started in the Pipecat ecosystem. |
 | [amicalhq/amical](https://github.com/amicalhq/amical) | 1.6k | 2025-05-08 | Open-source, local-first desktop dictation and note-taking app that uses open-source speech models and works offline. Installable via Homebrew on macOS. |
+| [kyutai-labs/unmute](https://github.com/kyutai-labs/unmute) | 1.5k | 2025-06-10 | System that lets any text LLM listen and speak by wrapping it in Kyutai's low-latency speech-to-text and text-to-speech models. |
+| [HumeAI/tada](https://github.com/HumeAI/tada) | 1k | 2026-03-07 | Hume AI's open-source speech language model for text-to-speech. |
 | [Ampixa/sanoTTS](https://github.com/Ampixa/sanoTTS) | 797 | 2026-07-11 | Family of tiny neural text-to-speech voices of 294k to 2.3M parameters that need no cloud or NPU. They run in real time on an ESP32-S3 or in the browser via WASM. |
+| [Liquid4All/liquid-audio](https://github.com/Liquid4All/liquid-audio) | 594 | 2025-09-29 | Liquid AI's Python package for its LFM2-Audio end-to-end speech-to-speech models, with interleaved and sequential generation modes for real-time conversation, plus fine-tuning tools. |
 | [FireRedTeam/FireRedChat](https://github.com/FireRedTeam/FireRedChat) | 593 | 2025-09-09 | Self-hosted real-time voice agent system with WebUI and Docker services, plus released pVAD, turn-detector, FireRedTTS and FireRedASR components in a cascaded pipeline. |
 | [steipete/sag](https://github.com/steipete/sag) | 583 | 2025-12-07 | Go CLI that works like the macOS say command but speaks with ElevenLabs voices. Streams to speakers by default, can list voices or save audio files. |
+| [inclusionAI/Ming-3.0-tts](https://github.com/inclusionAI/Ming-3.0-tts) | 564 | 2026-10-19 | Ant Group's open text-to-speech model family with 0.5B dense and 7.9B mixture-of-experts variants, supporting multilingual speech, voice cloning, voice design and natural-language control. |
 | [freestyle-voice/freestyle](https://github.com/freestyle-voice/freestyle) | 488 | 2026-05-25 | Desktop voice app that dictates into any app via a hotkey, helps with writing, and can check in on a schedule with proactive reminders across connected apps. |
 | [gradium-ai/xn-ptts](https://github.com/gradium-ai/xn-ptts) | 382 | 2026-05-03 | Rust inference runtime for Phonon on-device text-to-speech, with CLI, Python, browser and mobile integrations. Phonon 31m weights are Apache 2.0; 40m variants use CC BY-NC 4.0. |
 | [second-state/qwen3_asr_rs](https://github.com/second-state/qwen3_asr_rs) | 254 | 2026-02-20 | Pure Rust implementation of Qwen3-ASR speech recognition, shipped as a cross-platform CLI and an OpenAI-compatible transcription API server. |
 | [second-state/qwen3_tts_rs](https://github.com/second-state/qwen3_tts_rs) | 234 | 2026-01-25 | Rust implementation of Qwen3 text-to-speech inference. Provides cross-platform CLI tools for speech generation and voice cloning, plus an OpenAI-compatible server. |
+| [adventists-ai/sophon-realtime](https://github.com/adventists-ai/sophon-realtime) | 213 | 2026-11-04 | Open full-duplex voice model family that listens while you talk, picks up tone and answers with expressive speech. The Tag and Flash models run on one GPU with vLLM-Omni; an end-to-end model is in preview. |
 | [nyosegawa/speech.cpp](https://github.com/nyosegawa/speech.cpp) | 179 | 2026-09-29 | Speech engine in C++ on ggml covering TTS, speech recognition and VAD, with Metal, Vulkan and CPU backends. Ships one CLI and shared library behind a C API, plus an OpenAI-compatible server and live transcription. |
 | [steipete/brabble](https://github.com/steipete/brabble) | 172 | 2025-12-03 | Always-on local voice daemon for macOS and Linux in Go that listens for a wake word, transcribes with whisper.cpp and then runs a configurable hook command. |
 | [second-state/qwen3_audio_api](https://github.com/second-state/qwen3_audio_api) | 90 | 2026-01-26 | OpenAI-compatible API servers for Qwen3-TTS and Qwen3-ASR, in Python and Rust, serving /v1/audio/speech and /v1/audio/transcriptions for self-hosted text-to-speech and speech-to-text. |
+| [OpenMOSS/MOSS-Live](https://github.com/OpenMOSS/MOSS-Live) | 74 | 2026-11-07 | Full-duplex real-time interaction system with live audio and vision that listens while speaking, follows interruptions and keeps talking while background tools run a task. Newly published repo with no licence listed. |
 
 ### Vision, video & image models
 
