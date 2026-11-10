@@ -1,6 +1,6 @@
 # Awesome AI
 
-A personal, categorized index of 586 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
+A personal, categorized index of 590 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
 
 _Last generated 2026-11-10. Star counts are a snapshot._
 
@@ -12,11 +12,11 @@ _Last generated 2026-11-10. Star counts are a snapshot._
   - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (11)
   - [Domain & research agents](#domain--research-agents) (11)
   - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (8)
-- [Coding agents](#coding-agents) (165)
+- [Coding agents](#coding-agents) (168)
   - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (27)
-  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (25)
+  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (29)
   - [Parallel agent orchestration](#parallel-agent-orchestration) (14)
-  - [Remote & mobile agent clients](#remote--mobile-agent-clients) (12)
+  - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
   - [Autonomous loops & background agents](#autonomous-loops--background-agents) (16)
   - [Harness plugins, hooks & config](#harness-plugins-hooks--config) (25)
   - [Agent task tracking & planning](#agent-task-tracking--planning) (12)
@@ -39,13 +39,14 @@ _Last generated 2026-11-10. Star counts are a snapshot._
   - [RAG, knowledge graphs & context layers](#rag-knowledge-graphs--context-layers) (18)
   - [Semantic & hybrid search](#semantic--hybrid-search) (8)
   - [Token & context-window optimization](#token--context-window-optimization) (9)
-- [Agent tools & integrations](#agent-tools--integrations) (62)
+- [Agent tools & integrations](#agent-tools--integrations) (63)
   - [MCP platforms & tool plumbing](#mcp-platforms--tool-plumbing) (8)
   - [Service connectors (MCP servers, API CLIs & clients)](#service-connectors-mcp-servers-api-clis--clients) (16)
   - [Browser & computer-use automation](#browser--computer-use-automation) (14)
   - [Web crawling & scraping](#web-crawling--scraping) (9)
   - [Document parsing, OCR & extraction](#document-parsing-ocr--extraction) (8)
   - [Visual & audio production tools](#visual--audio-production-tools) (7)
+  - [Native UI frameworks for agent apps](#native-ui-frameworks-for-agent-apps) (1)
 - [Models, inference & LLM access](#models-inference--llm-access) (104)
   - [LLM inference engines & serving](#llm-inference-engines--serving) (16)
   - [Local model runners & desktop AI](#local-model-runners--desktop-ai) (9)
@@ -244,22 +245,26 @@ Desktop, native and web workbenches where a human drives one or many coding agen
 | [manaflow-ai/cmux](https://github.com/manaflow-ai/cmux) | 28.2k | 2026-01-28 | Ghostty-based macOS terminal with vertical tabs and notifications designed for running multiple AI coding agents. |
 | [pingdotgg/t3code](https://github.com/pingdotgg/t3code) | 28.1k | 2026-02-08 | Agent harness control surface for controlling coding agents on your machine from Electron desktop, web and iOS/Android mobile apps. |
 | [getpaseo/paseo](https://github.com/getpaseo/paseo) | 21.2k | 2025-10-13 | Open-source agentic development environment for desktop, mobile, web and CLI that manages Claude Code, Codex, Copilot, OpenCode and other agents alongside editor, terminals, diffs and a browser. |
-| [superset-sh/superset](https://github.com/superset-sh/superset) | 15.3k | 2025-10-21 | Agentic IDE for running many CLI coding agents such as Claude Code and Codex in parallel with terminals, code review and browser previews, using the user's own subscriptions. |
+| [ParadevAI/Paradev](https://github.com/ParadevAI/Paradev) | 15.3k | 2025-10-21 | Agentic desktop workspace, formerly Superset, for running CLI coding agents in parallel with isolated worktrees, terminals, code review and browser previews. |
 | [OrchestratorInc/agent-orchestrator](https://github.com/OrchestratorInc/agent-orchestrator) | 13.3k | 2026-02-13 | Electron desktop app, with optional CLI and mobile app, that supervises coding agents in isolated workspaces and tracks their pull requests, CI, reviews and merge conflicts. Supports many harnesses. |
 | [openchamber/openchamber](https://github.com/openchamber/openchamber) | 11.7k | 2025-09-11 | Open-source workspace built on the OpenCode agent for running and reviewing agent work, usable from desktop and remotely. |
 | [generalaction/emdash](https://github.com/generalaction/emdash) | 6k | 2025-08-28 | Open-source agentic development environment for running multiple coding agents in parallel with any provider. |
 | [get-bb/bb](https://github.com/get-bb/bb) | 4.4k | 2026-02-24 | Agentic IDE that can control, customize and automate itself, driven through a desktop app, web app, CLI or HTTP API, with work organized into followable threads. |
 | [Dimillian/CodexMonitor](https://github.com/Dimillian/CodexMonitor) | 4.3k | 2026-01-11 | Tauri app for orchestrating multiple Codex agents across local workspaces, with a project sidebar and conversation view backed by the Codex app-server protocol. |
+| [RunMaestro/Maestro](https://github.com/RunMaestro/Maestro) | 3.6k | 2025-11-23 | Cross-platform desktop command center for running coding agents in parallel, with worktrees, automated checklist runs, agent collaboration and mobile remote control. |
 | [zeronsh/zeron](https://github.com/zeronsh/zeron) | 3.3k | 2026-07-20 | Native control plane for running Claude Code, Codex, Cursor, Devin and other coding agents from a desktop app, local by default with optional multi-device sync. |
 | [hardbeat920/monocode](https://github.com/hardbeat920/monocode) | 3.1k | 2026-08-20 | GUI for coding agents that runs any installed and logged-in CLI such as Claude Code, Codex, Cursor, OpenCode or Devin, with tabs as sessions and a composer as the input. |
 | [collabs-inc/collab-public](https://github.com/collabs-inc/collab-public) | 3.1k | 2026-03-15 | Early-stage Electron desktop app (macOS, Windows, Linux) that places agent terminals, editors, markdown and running code on an infinite canvas. |
 | [sheprd-labs/sheprd](https://github.com/sheprd-labs/sheprd) | 2.3k | 2026-09-20 | Native cross-platform Herdr client for viewing terminal sessions, workspaces, Git worktrees and agent activity through a local daemon. |
+| [Nimbalyst/nimbalyst](https://github.com/Nimbalyst/nimbalyst) | 2.1k | 2025-10-30 | Open-source visual workspace for multiple coding agents, combining parallel sessions with Markdown, mockups, diagrams and task tracking. |
 | [coder/xum](https://github.com/coder/xum) | 2.1k | 2025-09-17 | Desktop app (renamed from Mux) for isolated, parallel agentic development, acting as a coding agent multiplexer. |
 | [px0-ai/px0](https://github.com/px0-ai/px0) | 1.9k | 2026-06-24 | Browser-based review workbench and IDE for AI-generated code, with Git and GitHub integrations, code search, fixes and handoff to local coding agents. |
-| [penso/herdr-gpui](https://github.com/penso/herdr-gpui) | 1.5k | 2026-09-20 | Native Rust/GPUI client for macOS, Linux and Windows that connects to a local Herdr daemon to show terminal sessions, workspaces, Git worktrees and agent activity. |
+| [traycerai/traycer](https://github.com/traycerai/traycer) | 1.7k | 2024-05-11 | Open-source desktop workspace for running coding agents in parallel on shared tasks, with worktrees, specifications, reviews and agent-to-agent messaging. |
+| [davidondrej/cloudroom](https://github.com/davidondrej/cloudroom) | 1.6k | 2026-09-17 | Open-source desktop and cloud workspace for coding agents, with isolated cloud sandboxes and sessions that can move between a Mac and the cloud. |
 | [penso/arbor](https://github.com/penso/arbor) | 836 | 2026-03-04 | Native Rust desktop app built on GPUI for agentic coding, combining Git worktrees, terminals and diffs in one window. |
 | [missuo/herdrm](https://github.com/missuo/herdrm) | 762 | 2026-08-19 | Native macOS console for herdr that shows Claude Code, Codex, Gemini, Grok and OpenCode sessions across the Mac and SSH hosts, with full-fidelity TUI access to each. |
 | [arsumbris/arsumbris](https://github.com/arsumbris/arsumbris) | 268 | 2026-09-13 | Early-alpha macOS workbench for typed knowledge, combining a cross-repository graph engine, an extensible Electron UI and MCP adapters for agent harnesses. Knowledge, types, tools, skills and views are composed from repositories. |
+| [imbue-ai/sculptor](https://github.com/imbue-ai/sculptor) | 246 | 2025-08-07 | Experimental desktop app for running coding agents in parallel in isolated workspaces, with integrated Claude Code and Pi support, terminal agents, review tools and bundled skills. |
 | [owengretzinger/constellagent](https://github.com/owengretzinger/constellagent) | 217 | 2026-02-10 | macOS desktop app for running multiple AI agents in parallel, each with its own terminal, Monaco editor and isolated git worktree in a single window. |
 | [scarce/axel](https://github.com/scarce/axel) | 208 | 2026-01-29 | Native macOS app, paired with a Rust CLI, that presents a task list while orchestrating many AI agents across tmux panes, Ghostty-based terminals and git worktrees. |
 | [longsurf-ai/endo](https://github.com/longsurf-ai/endo) | 93 | 2026-10-14 | Desktop chat app described as a Higher Order Harness: it composes Codex, Claude Code and other agents on existing subscriptions into workflows behind one interface. |
@@ -296,7 +301,6 @@ Clients for controlling coding agents from a phone, browser or chat app such as 
 | [devswha/ovis](https://github.com/devswha/ovis) | 2k | 2026-09-17 | Open-source browser and phone client for Herdr, with chat, live terminals, remote PCs over SSH and push alerts. |
 | [remorses/kimaki](https://github.com/remorses/kimaki) | 1.4k | 2025-09-02 | Collaborative agent orchestrator that exposes OpenCode through Discord, mapping each channel to a project and each thread to a coding session. |
 | [AltanS/collie](https://github.com/AltanS/collie) | 1.4k | 2026-06-28 | Self-hosted PWA that serves as a mobile client for Herdr, with experimental tmux and zellij support, for driving Claude Code, Pi, Codex and OpenCode from a phone with push alerts. |
-| [devswha/herdr-web-ui](https://github.com/devswha/herdr-web-ui) | 1.1k | 2026-09-17 | Browser and phone client for herdr that offers chat and live terminal views of each agent pane, remote PCs over SSH, and web push alerts. |
 | [hosenur/portal](https://github.com/hosenur/portal) | 812 | 2025-12-09 | Mobile-first web UI for OpenCode with Git integration, an in-browser terminal and isolated workspaces; a personal project unaffiliated with the OpenCode or SST teams. |
 | [eriklangille/clauntty](https://github.com/eriklangille/clauntty) | 398 | 2025-12-22 | iOS SSH terminal with persistent sessions, GPU-accelerated rendering and native Claude Code support, keeping sessions alive when the app backgrounds. |
 | [antirez/tgterm](https://github.com/antirez/tgterm) | 225 | 2026-02-03 | C program that exposes macOS terminals over Telegram so developers can send instructions to coding agents and observe results while away from the keyboard. |
@@ -788,6 +792,14 @@ Renderers, animation engines and audio tools that agents can use to create, insp
 | [google-labs-code/stitch-sdk](https://github.com/google-labs-code/stitch-sdk) | 1.8k | 2025-12-03 | Generate UI screens from text prompts and extract their HTML and screenshots programmatically. |
 | [modem-dev/sideshow](https://github.com/modem-dev/sideshow) | 635 | 2026-06-11 | The missing visual surface companion for agents - generate UI mockups, data visualizations, code explainers, and more |
 | [bnomei/nereid](https://github.com/bnomei/nereid) | 68 | 2026-02-06 | Create and explore Mermaid diagrams in collaboration with AI agents (TUI + MCP Server) |
+
+### Native UI frameworks for agent apps
+
+Frameworks for building native interfaces and allowing agents to inspect or test them.
+
+| Project | Stars | Created | Description |
+|---|--:|---|---|
+| [anomalyco/rune](https://github.com/anomalyco/rune) | 6.1k | 2026-10-22 | Pre-release GPU-rendered Rust UI framework for native desktop and web apps, including coding-agent interfaces. Apps can run headlessly for agent-driven screenshots, element inspection and scripted input. |
 
 ## Models, inference & LLM access
 

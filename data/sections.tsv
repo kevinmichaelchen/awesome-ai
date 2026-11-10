@@ -33,6 +33,7 @@ Agent tools & integrations	tools.browser	Browser & computer-use automation	Brows
 Agent tools & integrations	tools.scraping	Web crawling & scraping	Crawlers, scrapers and HTML-to-Markdown converters that turn web content into clean data for LLMs.
 Agent tools & integrations	tools.docparse	Document parsing, OCR & extraction	PDF parsers, OCR models and extraction libraries that turn documents into LLM-ready text or structured data.
 Agent tools & integrations	tools.media	Visual & audio production tools	Renderers, animation engines and audio tools that agents can use to create, inspect and refine diagrams, video and sound from code.
+Agent tools & integrations	tools.nativeui	Native UI frameworks for agent apps	Frameworks for building native interfaces and allowing agents to inspect or test them.
 Models, inference & LLM access	ml.inference	LLM inference engines & serving	Engines and serving layers for running LLMs fast, from datacenter GPU servers to Apple Silicon, browsers and consumer hardware.
 Models, inference & LLM access	ml.local	Local model runners & desktop AI	Launchers, runners and managers for picking, swapping and serving models on your own machines.
 Models, inference & LLM access	ml.frameworks	ML frameworks, training & fine-tuning	Array and ML frameworks, language bindings, fine-tuning libraries, training research and model conversion collections.
