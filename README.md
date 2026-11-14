@@ -1,8 +1,8 @@
 # Awesome AI
 
-A personal, categorized index of 610 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
+A personal, categorized index of 611 AI projects: agent frameworks, coding agents, skills, sandboxes, memory and retrieval, tools, models, formal verification, languages and compilers. Each project section is sorted by GitHub stars.
 
-_Last generated 2026-11-10. Star counts are a snapshot._
+_Last generated 2026-11-14. Star counts are a snapshot._
 
 ## Contents
 
@@ -12,9 +12,9 @@ _Last generated 2026-11-10. Star counts are a snapshot._
   - [Multi-agent collaboration & simulation](#multi-agent-collaboration--simulation) (11)
   - [Domain & research agents](#domain--research-agents) (11)
   - [Agent evals, benchmarks & training](#agent-evals-benchmarks--training) (8)
-- [Coding agents](#coding-agents) (168)
+- [Coding agents](#coding-agents) (169)
   - [Coding agent CLIs & harness cores](#coding-agent-clis--harness-cores) (27)
-  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (29)
+  - [Agent IDEs & desktop workbenches (ADEs)](#agent-ides--desktop-workbenches-ades) (30)
   - [Parallel agent orchestration](#parallel-agent-orchestration) (14)
   - [Remote & mobile agent clients](#remote--mobile-agent-clients) (11)
   - [Autonomous loops & background agents](#autonomous-loops--background-agents) (16)
@@ -268,6 +268,7 @@ Desktop, native and web workbenches where a human drives one or many coding agen
 | [owengretzinger/constellagent](https://github.com/owengretzinger/constellagent) | 217 | 2026-02-10 | macOS desktop app for running multiple AI agents in parallel, each with its own terminal, Monaco editor and isolated git worktree in a single window. |
 | [scarce/axel](https://github.com/scarce/axel) | 208 | 2026-01-29 | Native macOS app, paired with a Rust CLI, that presents a task list while orchestrating many AI agents across tmux panes, Ghostty-based terminals and git worktrees. |
 | [longsurf-ai/endo](https://github.com/longsurf-ai/endo) | 93 | 2026-10-14 | Desktop chat app described as a Higher Order Harness: it composes Codex, Claude Code and other agents on existing subscriptions into workflows behind one interface. |
+| [AltharIDE/althar](https://github.com/AltharIDE/althar) | 14 | 2026-09-17 | Desktop ADE that assigns requests to coding agents and routes their changes to another model for review. |
 
 ### Parallel agent orchestration
 
