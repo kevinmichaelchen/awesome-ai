@@ -609,3 +609,4 @@ adventists-ai/sophon-realtime	ml.speech	213	2026-11-04	false	Open full-duplex vo
 OpenMOSS/MOSS-Live	ml.speech	74	2026-11-07	false	Full-duplex real-time interaction system with live audio and vision that listens while speaking, follows interruptions and keeps talking while background tools run a task. Newly published repo with no licence listed.	
 huggingface/transformers.js	ml.inference	16411	2023-02-13	false	JavaScript library that runs Hugging Face Transformers models directly in the browser, with no server.	
 software-mansion/react-native-executorch	ml.local	1788	2024-10-16	false	On-device AI inference library for React Native built on Meta's ExecuTorch runtime, with pre-exported models for vision, language, text-to-speech and transcription, and support for custom .pte models.	
+AltharIDE/althar	coding.ade	14	2026-09-17	false	Desktop ADE that assigns requests to coding agents and routes their changes to another model for review.
